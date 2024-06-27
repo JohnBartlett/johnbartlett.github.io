@@ -1,17 +1,28 @@
 ---
 layout: home
 title: John Bartlett - AI Professional
-header_image: /assets/images/ai_banner.jpg
 ---
 
-# Welcome to the World of AI
+# Welcome to My AI Journey
 
 I'm John Bartlett, an AI Engineer and Machine Learning Specialist passionate about pushing the boundaries of artificial intelligence.
 
-## What I Do
+## What I Specialize In
 
-- Develop cutting-edge machine learning models
-- Implement AI solutions for real-world problems
-- Research and apply the latest advancements in AI and deep learning
+- 🧠 Developing cutting-edge machine learning models
+- 🌐 Implementing AI solutions for real-world problems
+- 🔬 Researching and applying the latest advancements in AI and deep learning
 
-[Explore My Projects](/projects) | [Read My Blog](/blog)
+## Recent Projects
+
+1. **Project A**: Brief description here
+2. **Project B**: Brief description here
+3. **Project C**: Brief description here
+
+[Explore All Projects](/projects) | [Read My Blog](/blog)
+
+## Let's Connect
+
+I'm always interested in new AI challenges and collaborations. Feel free to reach out!
+
+[Contact Me](/contact) | [LinkedIn](your-linkedin-url) | [GitHub](your-github-url)
