@@ -41,3 +41,4 @@ Check out my most recent blog posts on AI and machine learning.
 I'm always interested in new AI challenges and collaborations. Feel free to reach out!
 
 [Contact Me](/contact){: .btn} [LinkedIn](#){: .btn} [GitHub](#){: .btn}
+
