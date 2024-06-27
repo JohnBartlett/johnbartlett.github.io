@@ -1,18 +1,26 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About John Bartlett
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm an AI Engineer with over [X] years of experience in developing and implementing AI solutions. My expertise includes:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+- Machine Learning
+- Deep Learning
+- Natural Language Processing
+- Computer Vision
 
+## My Journey
 
-[jekyll-organization]: https://github.com/jekyll
+[Brief paragraph about your background and how you got into AI]
+
+## My Approach
+
+[Paragraph about your philosophy or approach to AI development]
+
+## Let's Connect
+
+I'm always interested in discussing new AI projects and opportunities. Feel free to [contact me](/contact) or connect with me on [LinkedIn](your-linkedin-url).
