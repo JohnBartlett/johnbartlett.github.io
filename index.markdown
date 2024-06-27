@@ -1,9 +1,10 @@
 ---
 layout: home
 title: John Bartlett - AI Professional
+header_image: /assets/images/ai_banner.jpg
 ---
 
-# Welcome to My AI Journey
+# Welcome to the World of AI
 
 I'm John Bartlett, an AI Engineer and Machine Learning Specialist passionate about pushing the boundaries of artificial intelligence.
 
