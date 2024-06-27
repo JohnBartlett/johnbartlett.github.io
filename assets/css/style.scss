@@ -1,3 +1,21 @@
+.site-header {
+  background-color: $primary-color;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-title, .site-nav .page-link {
+  color: #ffffff;
+}
+
+.site-nav {
+  .page-link {
+    margin-left: 20px;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -19,3 +37,22 @@ $primary-color: #2c3e50;
 $secondary-color: #3498db;
 $background-color: #f8f9fa;
 $text-color: #333333;
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.site-header {
+  background-color: $primary-color;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
