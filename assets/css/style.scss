@@ -41,23 +41,44 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Hero Section
+// Hero Section (updated)
 .hero {
-  background-color: $primary-color;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
   color: #ffffff;
   text-align: center;
-  padding: 4rem 0;
-  margin-bottom: 2rem;
+  padding: 6rem 0;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.1) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+    transform: rotate(45deg);
+  }
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 2rem;
+    opacity: 0.9;
   }
 }
 
