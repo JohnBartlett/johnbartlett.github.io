@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Hero Section (updated)
+// Hero Section
 .hero {
   background: linear-gradient(135deg, $primary-color, $secondary-color);
   color: #ffffff;
@@ -82,6 +82,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Content Section
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
 // Project Showcase
 .project-grid {
   display: grid;
@@ -92,19 +99,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-card {
   background: #ffffff;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
   }
 
   img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
   }
 
   .project-info {
@@ -112,11 +125,57 @@ h1, h2, h3, h4, h5, h6 {
 
     h3 {
       margin-top: 0;
+      color: $primary-color;
     }
   }
 }
 
-// Call-to-Action Buttons
+// Skills Section
+.skills-section {
+  background-color: $background-color;
+  padding: 3rem 0;
+  margin: 3rem 0;
+  border-radius: 12px;
+
+  .skill-item {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    i {
+      font-size: 3rem;
+      color: $secondary-color;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// Call-to-Action Section
+.cta-section {
+  background: linear-gradient(45deg, $primary-color, $secondary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 0;
+  margin: 3rem 0;
+  border-radius: 12px;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+}
+
+// Buttons
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -154,10 +213,40 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Utility Classes
+.text-center {
+  text-align: center;
+}
+
+// Animated underline for links
+a:not(.btn) {
+  position: relative;
+  text-decoration: none;
+  color: $secondary-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $secondary-color;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
 // Responsive Design
 @media screen and (max-width: 600px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero h2 {
@@ -166,6 +255,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
   }
 }
 
@@ -177,26 +270,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .fade-in {
   animation: fadeIn 1s ease-out;
-}
-
-.content-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.specialties {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
 }
