@@ -2,10 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   {% include favicon.html %}
+  {% feed_meta %}
+  {% seo %}
 </head>
 <body>
-  {{ content }}
+  <header class="site-header">
+    <!-- Add your site header content here -->
+  </header>
+
+  <main class="page-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <!-- Add your site footer content here -->
+  </footer>
 </body>
 </html>
