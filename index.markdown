@@ -3,22 +3,33 @@ layout: home
 title: John Bartlett - AI Professional
 ---
 
-<div class="hero fade-in">
+<div class="hero">
   <h1>John Bartlett</h1>
   <h2>AI Engineer & Machine Learning Specialist</h2>
   <a href="/contact" class="btn btn-primary">Get in Touch</a>
 </div>
 
-<div class="content-section fade-in">
+<div class="content-section">
   <h2>Welcome to My AI Journey</h2>
-  <p>I'm John Bartlett, an AI Engineer and Machine Learning Specialist passionate about pushing the boundaries of artificial intelligence.</p>
+  <p>I'm passionate about pushing the boundaries of artificial intelligence and creating innovative solutions that make a difference.</p>
 
-  <h2>What I Specialize In</h2>
-  <ul class="specialties">
-    <li>🧠 <strong>Machine Learning:</strong> Developing cutting-edge models</li>
-    <li>🌐 <strong>AI Solutions:</strong> Implementing real-world applications</li>
-    <li>🔬 <strong>Research:</strong> Exploring the latest in AI and deep learning</li>
-  </ul>
+  <div class="skills-section">
+    <div class="skill-item">
+      <i class="fas fa-brain"></i>
+      <h3>Machine Learning</h3>
+      <p>Developing cutting-edge models</p>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-network-wired"></i>
+      <h3>AI Solutions</h3>
+      <p>Implementing real-world applications</p>
+    </div>
+    <div class="skill-item">
+      <i class="fas fa-microscope"></i>
+      <h3>Research</h3>
+      <p>Exploring the latest in AI and deep learning</p>
+    </div>
+  </div>
 
   <h2>Featured Projects</h2>
   <div class="project-grid">
@@ -43,17 +54,15 @@ title: John Bartlett - AI Professional
     <a href="/projects" class="btn btn-primary">View All Projects</a>
   </div>
 
+  <div class="cta-section">
+    <h2>Let's Create Something Amazing</h2>
+    <p>I'm always excited to take on new AI challenges and collaborations.</p>
+    <a href="/contact" class="btn btn-primary">Get in Touch</a>
+  </div>
+
   <h2>Latest Insights</h2>
   <p>Check out my most recent blog posts on AI and machine learning.</p>
   <div class="text-center">
     <a href="/blog" class="btn btn-primary">Read the Blog</a>
-  </div>
-
-  <h2>Let's Connect</h2>
-  <p>I'm always interested in new AI challenges and collaborations. Feel free to reach out!</p>
-  <div class="social-links">
-    <a href="/contact" class="btn">Contact Me</a>
-    <a href="#" class="btn">LinkedIn</a>
-    <a href="#" class="btn">GitHub</a>
   </div>
 </div>
