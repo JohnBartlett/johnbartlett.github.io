@@ -157,3 +157,25 @@ h1, h2, h3, h4, h5, h6 {
 .fade-in {
   animation: fadeIn 1s ease-out;
 }
+
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.specialties {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
