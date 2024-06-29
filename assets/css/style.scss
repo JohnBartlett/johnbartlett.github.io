@@ -9,6 +9,12 @@ $secondary-color: #3498db;
 $background-color: #f8f9fa;
 $text-color: #333333;
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 // Typography
 body {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -22,19 +28,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Header and Navigation
+ 
 .site-header {
+//  background-color: $primary-color;
+//  padding: 1rem 0;
+//  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   background-color: $primary-color;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .site-title, .site-nav .page-link {
   color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .site-nav {
-  .page-link {
-    margin-left: 20px;
+//  .page-link {
+//    margin-left: 20px;
+//    &:hover {
+//      color: $secondary-color;
+//    }
+//  }
+  display: flex;
+  gap: 20px;
+
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
     &:hover {
       color: $secondary-color;
     }
@@ -244,7 +275,7 @@ a:not(.btn) {
 }
 
 // Responsive Design
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -259,6 +290,15 @@ a:not(.btn) {
 
   .cta-section h2 {
     font-size: 2rem;
+  }
+  .site-header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
