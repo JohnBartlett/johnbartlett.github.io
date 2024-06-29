@@ -12,7 +12,7 @@ $text-color: #333333;
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px; // Increased padding from 20px to 40px
 }
 
 // Typography
@@ -28,11 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Header and Navigation
- 
 .site-header {
-//  background-color: $primary-color;
-//  padding: 1rem 0;
-//  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   background-color: $primary-color;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -44,19 +40,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.site-title, .site-nav .page-link {
+.site-title {
   color: #ffffff;
   font-size: 2rem;
   margin: 0;
+  padding: 10px 0; // Added padding to give more space above and below the title
 }
 
 .site-nav {
-//  .page-link {
-//    margin-left: 20px;
-//    &:hover {
-//      color: $secondary-color;
-//    }
-//  }
   display: flex;
   gap: 20px;
 
@@ -276,6 +267,20 @@ a:not(.btn) {
 
 // Responsive Design
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px; // Reduce padding on smaller screens
+  }
+
+  .site-header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -290,15 +295,6 @@ a:not(.btn) {
 
   .cta-section h2 {
     font-size: 2rem;
-  }
-  .site-header .container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .site-nav {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
