@@ -12,7 +12,7 @@ $text-color: #333333;
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px; // Increased padding from 20px to 40px
+  padding: 0 40px; // Increased padding
 }
 
 // Typography
@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px; // Additional padding for header container
   }
 }
 
@@ -44,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-size: 2rem;
   margin: 0;
-  padding: 10px 0; // Added padding to give more space above and below the title
+  padding: 10px 0; // Added padding
 }
 
 .site-nav {
@@ -272,6 +273,7 @@ a:not(.btn) {
   }
 
   .site-header .container {
+    padding: 0 20px; // Specific padding for header on small screens
     flex-direction: column;
     gap: 1rem;
   }
