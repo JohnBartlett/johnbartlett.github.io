@@ -4,7 +4,7 @@ title: John Bartlett - AI Professional
 ---
 
 <div class="hero">
-  <h1>John Bartlett</h1>
+  <h1>   John Bartlett</h1>
   <h2>AI Engineer & Machine Learning Specialist</h2>
   <a href="/contact" class="btn btn-primary">Get in Touch</a>
 </div>
