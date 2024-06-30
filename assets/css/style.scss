@@ -29,43 +29,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Header and Navigation
-.site-header {
-  background-color: $primary-color;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
-  .container, .wrapper {
+.site-header {
+  .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px;
   }
 }
 
 .site-title {
-  color: #ffffff;
-  font-size: 2rem;
-  margin: 0;
-  padding: 10px 0;
-  display: inline-block;
-  float: none;
-  
-  &:visited {
-    color: #ffffff;
-  }
+  margin-right: auto;
+  padding-left: 40px !important;
+  float: none !important;
 }
 
 .site-nav {
-  display: flex;
-  gap: 20px;
-
+  float: none !important;
+  line-height: normal !important;
+  
   .page-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: $secondary-color;
+    margin-left: 20px;
+    
+    &:not(:last-child) {
+      margin-right: 0;
     }
   }
 }
