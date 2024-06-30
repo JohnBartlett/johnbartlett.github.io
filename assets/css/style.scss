@@ -12,7 +12,8 @@ $text-color: #333333;
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px; // Increased padding
+  padding: 0 20px; // Increased padding
+  width: 100%;
 }
 
 // Typography
@@ -37,7 +38,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px; // Additional padding for header container
+    padding: 0 60px; // Additional padding for header container
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -46,6 +49,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   margin: 0;
   padding: 10px 0; // Added padding
+  .site-title {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
+  padding: 10px 0;
+  margin-left: 60px; // This will push the title to the right
+}
 }
 
 .site-nav {
