@@ -45,17 +45,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-title {
-  color: #ffffff;
+ color: #ffffff;
   font-size: 2rem;
   margin: 0;
-  padding: 10px 0; // Added padding
-  .site-title {
-  color: #ffffff;
-  font-size: 2rem;
-  margin: 0;
-  padding: 10px 0;
-  margin-left: 60px; // This will push the title to the right
-}
+  padding: 10px 20px; // Add horizontal padding
+  display: inline-block; // This ensures the title takes only the space it needs
+  position: relative; // This allows us to use left positioning if needed
+  left: 20px; // This moves the title 20px to the right
 }
 
 .site-nav {
