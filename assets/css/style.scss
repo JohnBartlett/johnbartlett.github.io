@@ -309,3 +309,8 @@ a:not(.btn) {
 .fade-in {
   animation: fadeIn 1s ease-out;
 }
+
+body {
+  border: 5px solid red !important;
+}
+
