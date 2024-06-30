@@ -9,10 +9,10 @@ $secondary-color: #3498db;
 $background-color: #f8f9fa;
 $text-color: #333333;
 
-.container {
+.container, .site-header .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; // Increased padding
+  padding: 0 40px;
   width: 100%;
 }
 
@@ -34,31 +34,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
-  .container {
+  .container, .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px; // Additional padding for header container
-    max-width: 1200px;
-    margin: 0 auto;
   }
 }
 
 .site-title {
- color: #ffffff;
+  color: #ffffff;
   font-size: 2rem;
   margin: 0;
-  padding: 10px 20px; // Add horizontal padding
-  display: inline-block; // This ensures the title takes only the space it needs
-  position: relative; // This allows us to use left positioning if needed
-  left: 20px; // This moves the title 20px to the right
+  padding: 10px 0;
+  display: inline-block;
+  float: none;
+  
+  &:visited {
+    color: #ffffff;
+  }
 }
 
 .site-nav {
   display: flex;
   gap: 20px;
 
-  .nav-link {
+  .page-link {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
@@ -274,12 +274,11 @@ a:not(.btn) {
 
 // Responsive Design
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 0 20px; // Reduce padding on smaller screens
+  .container, .site-header .wrapper {
+    padding: 0 20px;
   }
 
-  .site-header .container {
-    padding: 0 20px; // Specific padding for header on small screens
+  .site-header .container, .site-header .wrapper {
     flex-direction: column;
     gap: 1rem;
   }
@@ -315,8 +314,3 @@ a:not(.btn) {
 .fade-in {
   animation: fadeIn 1s ease-out;
 }
-
-//body {
-//  border: 5px solid red !important;
-//}
-
