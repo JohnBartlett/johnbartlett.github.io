@@ -333,3 +333,36 @@ a:not(.btn) {
   list-style: none;
   padding: 20px;
 }
+
+// Apply to all pages
+
+.page-content {
+  .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+// Headings on all pages
+
+.post-title,
+.page-heading,
+.post-list-heading {
+  font-size: 32px;
+  padding: 40px 0;
+}
+
+// List styles on all pages
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  padding: 20px 0;
+}
+
+// Ensure these styles apply to project and about pages
+
+.project-content,
+.about-content {
+  padding: 20px 0;
+}
+
