@@ -1,0 +1,34 @@
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-include-cache
+
+title: "John Bartlett - AI Consultant"
+name: "John Bartlett"
+description: "AI Solutions and Consulting"
+
+# Site Author
+author:
+  name: "John Bartlett"
+  bio: "AI Consultant specializing in [your specialties]"
+  location: "Your Location"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JohnBartlett"
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
