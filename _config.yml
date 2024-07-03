@@ -1,20 +1,37 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-plugins:
-  - jekyll-include-cache
-
+minimal_mistakes_skin: "air" # Try "contrast", "dark", or "mint" for different looks
+locale: "en-US"
 title: "John Bartlett - AI Consultant"
+subtitle: "Innovative AI Solutions"
 name: "John Bartlett"
-description: "AI Solutions and Consulting"
+description: "AI Solutions and Consulting for the Modern Business"
+url: "https://johnbartlett.github.io"
+logo: "/assets/images/logo.png" # Add a logo image to your /assets/images/ directory
+search: true
 
 # Site Author
 author:
   name: "John Bartlett"
-  bio: "AI Consultant specializing in [your specialties]"
+  avatar: "/assets/images/profile.jpg" # Add a profile photo to /assets/images/
+  bio: "AI Consultant specializing in machine learning and data science"
   location: "Your Location"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@example.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/yourprofile/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JohnBartlett"
 
 # Site Footer
 footer:
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/yourprofile/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JohnBartlett"
@@ -29,6 +46,21 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-XXXXXXXX-X"
+    anonymize_ip: false
+
