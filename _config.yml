@@ -86,4 +86,7 @@ plugins:
 
 # Keep the rest of your configuration as is
 ...
-
+sass:
+  sass_dir: assets/css
+extra_css:
+  - /assets/css/custom.scss

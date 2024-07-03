@@ -1,0 +1,41 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Custom styles
+.page__content {
+  h2 {
+    border-bottom: 1px solid #f2f3f3;
+    padding-bottom: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+}
+
+.grid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2em;
+
+  .archive__item {
+    border: 1px solid #f2f3f3;
+    border-radius: 4px;
+    padding: 1em;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .archive__item-title {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+
+    .archive__item-excerpt {
+      margin-bottom: 0;
+    }
+  }
+}
