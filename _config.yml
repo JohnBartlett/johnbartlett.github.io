@@ -64,3 +64,26 @@ analytics:
     tracking_id: "UA-XXXXXXXX-X"
     anonymize_ip: false
 
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"
+locale: "en-US"
+title: "John Bartlett - AI Consultant"
+subtitle: "Innovative AI Solutions"
+name: "John Bartlett"
+description: "AI Solutions and Consulting for the Modern Business"
+url: "https://johnbartlett.github.io"
+logo: "/assets/images/logo.png"
+search: true
+
+# Add this plugins section
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# Keep the rest of your configuration as is
+...
+
