@@ -90,3 +90,10 @@ sass:
   sass_dir: assets/css
 extra_css:
   - /assets/css/custom.scss
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
