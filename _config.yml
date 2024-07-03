@@ -1,18 +1,19 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air" # Try "contrast", "dark", or "mint" for different looks
+minimal_mistakes_skin: "air"
 locale: "en-US"
 title: "John Bartlett - AI Consultant"
 subtitle: "Innovative AI Solutions"
 name: "John Bartlett"
 description: "AI Solutions and Consulting for the Modern Business"
 url: "https://johnbartlett.github.io"
-logo: "/assets/images/logo.png" # Add a logo image to your /assets/images/ directory
+baseurl: ""
+logo: "/assets/images/logo.png"
 search: true
 
 # Site Author
 author:
   name: "John Bartlett"
-  avatar: "/assets/images/profile.jpg" # Add a profile photo to /assets/images/
+  avatar: "/assets/images/profile.jpg"
   bio: "AI Consultant specializing in machine learning and data science"
   location: "Your Location"
   links:
@@ -36,6 +37,33 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JohnBartlett"
 
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# Sass/SCSS
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
 # Defaults
 defaults:
   # _posts
@@ -57,43 +85,12 @@ defaults:
       layout: single
       author_profile: true
 
-# Analytics
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "UA-XXXXXXXX-X"
-    anonymize_ip: false
+# Reading Files
+include:
+  - _pages
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air"
-locale: "en-US"
-title: "John Bartlett - AI Consultant"
-subtitle: "Innovative AI Solutions"
-name: "John Bartlett"
-description: "AI Solutions and Consulting for the Modern Business"
-url: "https://johnbartlett.github.io"
-logo: "/assets/images/logo.png"
-search: true
-
-# Add this plugins section
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
-# Keep the rest of your configuration as is
-...
-sass:
-  sass_dir: assets/css
-extra_css:
-  - /assets/css/custom.scss
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

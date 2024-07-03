@@ -1,1 +1,7 @@
-// Your custom CSS here
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Add your custom CSS here
