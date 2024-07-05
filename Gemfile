@@ -8,3 +8,5 @@ gem "jekyll-gist"
 gem "jekyll-feed"
 gem "jemoji"
 gem 'html-proofer'
+gem 'faraday-retry'
+

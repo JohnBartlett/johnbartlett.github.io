@@ -14,3 +14,5 @@ redirects:
   /categories/photos: /categories/blog/photos
   /categories/thoughts: /categories/blog/thoughts
   /categories/llms: /categories/blog/llms
+plugins:
+  - jekyll-include-cache

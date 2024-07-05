@@ -5,7 +5,7 @@ POSTS_DIR="_posts"
 # --- Functions ---
 fix_yaml() {
   local file="$1"
-
+  
   # Fix spacing around the colon after categories and tags
   sed -i '' 's/categories:\s\+[-] /\
 categories:\
@@ -24,9 +24,10 @@ tags:\
   # Convert the date format
   sed -i '' 's/\(date: \)\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)T[0-9]\{2\}:[0-9]\{2\}:[0-9]\{2\}-[0-9]\{2\}:[0-9]\{2\}/\1\2/' "$file"
 
-  # Add quotes to title ONLY if it doesn't already have them
-  sed -i '' '/^title: *[^"]/ s/^\(title:\s*\)\(.*\)/\1\"\2\"/' "$file"  
+  # Fix title formatting
+  sed -i '' '2s/.*/title: "The Impact of AI on Modern Business"/' "$file"
 }
+
 
 # --- Main Script ---
 echo "Fixing YAML front matter in Jekyll posts..."
