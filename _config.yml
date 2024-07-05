@@ -1,0 +1,16 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://johnbartlett.github.io" # the base hostname & protocol for your site
+permalink: /:categories/:year/:month/:day/:title/
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+redirects:
+  /categories/quantum: /categories/blog/quantum
+  /categories/generative-ai: /categories/blog/generative-ai
+  /categories/travels: /categories/blog/travels
+  /categories/philosophy: /categories/blog/philosophy
+  /categories/ml: /categories/blog/ml
+  /categories/ai-strategy: /categories/blog/ai-strategy
+  /categories/quantum-cryptography: /categories/blog/quantum-cryptography
+  /categories/new-ai: /categories/blog/new-ai
+  /categories/photos: /categories/blog/photos
+  /categories/thoughts: /categories/blog/thoughts
+  /categories/llms: /categories/blog/llms

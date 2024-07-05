@@ -1,0 +1,556 @@
+
+=== Directory Structure ===
+
+Gemfile
+_config.yml
+_data/
+  navigation.yml
+_pages/
+  about.md
+  blog-tree.md
+  category-archive.md
+  posts.md
+  tag-archive.md
+_posts/
+  2023-06-01-ai-in-business.md
+  2023-06-27-anthropic-introduces-claude-3-5-sonnet.md
+  2023-06-27-latest-updates-on-claude-ai.md
+  2023-06-28-The-Revolution-of-Generative-AI-in-Content-Creation.md
+  2023-06-29-Emerging-Trends-in-AI:-What-to-Watch-in-2023.md
+  2023-06-30-Developing-a-Robust-AI-Strategy-for-Your-Business.md
+  2023-07-01-Understanding-Large-Language-Models:-Capabilities-and-Limitations.md
+  2023-07-02-Demystifying-Machine-Learning:-A-Beginner's-Guide.md
+  2023-07-03-Quantum-Computing:-The-Next-Frontier-in-Computational-Power.md
+  2023-07-04-The-Promise-of-Quantum-Cryptography-in-Cybersecurity.md
+  2023-07-05-AI-Conferences-Around-the-World:-A-Personal-Journey.md
+assets/
+  css/
+    custom.scss
+    main.scss
+  images/
+    ai-banner.jpg
+    ai-banner.png
+    ai-business-teaser.jpg
+    ai-strategy.jpg
+    data-science.jpg
+    logo.png
+    machine-learning.jpg
+    profile.jpg
+business.md
+capture_site_contents.sh
+create_sample_posts.sh
+create_sample_posts2.sh
+index.md
+less
+setup_jekyll_site.sh
+site_contents.txt
+test_jekyll_site.sh
+update_jekyll_site.sh
+
+=== _config.yml ===
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"
+breadcrumbs: true
+
+# Site Settings
+locale: "en-US"
+title: "John Bartlett - AI Consultant"
+title_separator: "-"
+subtitle: "Innovative AI Solutions"
+name: "John Bartlett"
+description: "AI Solutions and Consulting for the Modern Business"
+url: "https://johnbartlett.github.io"
+baseurl: ""
+repository: "JohnBartlett/johnbartlett.github.io"
+logo: "/assets/images/logo.png"
+search: true
+
+# Site Author
+author:
+  name: "John Bartlett"
+  avatar: "/assets/images/profile.jpg"
+  bio: "AI Consultant specializing in machine learning and data science"
+  location: "Your Location"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@example.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/yourprofile/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JohnBartlett"
+
+# Site Footer
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/yourprofile/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JohnBartlett"
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+=== _data/navigation.yml ===
+
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+
+=== index file ===
+
+---
+layout: home
+author_profile: true
+---
+
+# Welcome to John Bartlett's AI Consulting
+
+Specializing in cutting-edge AI solutions for businesses. With years of experience in machine learning and data science, I help companies leverage the power of AI to drive innovation and efficiency.
+
+## Services
+- AI Strategy Development
+- Machine Learning Implementation
+- Data Science Consulting
+- AI Training and Workshops
+
+## Recent Posts
+
+=== _posts directory ===
+
+File: _posts/2023-06-01-ai-in-business.md
+---
+title: "The Impact of AI on Modern Business"
+date: 2023-06-01T15:34:30-04:00
+categories:
+  - blog
+tags:
+  - AI
+  - Business
+header:
+  teaser: "/assets/images/ai-business-teaser.jpg"
+---
+
+AI is revolutionizing the way businesses operate. From predictive analytics to automated customer service, the applications are endless...
+
+[Rest of your blog post content]
+
+
+File: _posts/2023-06-27-anthropic-introduces-claude-3-5-sonnet.md
+---
+title: "Anthropic Introduces Claude 3.5 Sonnet: A New Benchmark in AI Performance"
+date: 2023-06-27T14:00:00-04:00
+categories:
+  - blog
+tags:
+  - AI
+  - Claude
+  - Anthropic
+  - Language Models
+---
+
+Anthropic has recently unveiled Claude 3.5 Sonnet, marking a significant leap forward in AI capabilities. This latest model showcases remarkable improvements across various benchmarks, solidifying its position as a leader in the field of artificial intelligence.
+
+## Unparalleled Performance
+
+Claude 3.5 Sonnet has demonstrated exceptional performance across a wide range of tasks:
+
+- **AGI Evaluations**: Achieved state-of-the-art results on cutting-edge AGI evaluations.
+- **Coding**: Excelled in coding tasks, particularly in Python.
+- **Math**: Showed superior performance in mathematical problem-solving.
+- **Chain-of-thought Reasoning**: Exhibited enhanced abilities in step-by-step reasoning.
+
+## Key Improvements
+
+The new model brings several significant enhancements:
+
+1. **Reduced Hallucinations**: Claude 3.5 Sonnet shows a marked decrease in fabricated or inaccurate information.
+2. **Improved Summarization**: It demonstrates a better ability to condense information accurately.
+3. **Enhanced Instruction-following**: The model now follows instructions more precisely.
+4. **Consistency**: Claude 3.5 Sonnet maintains higher consistency across repeated queries.
+
+## Benchmarks and Comparisons
+
+Anthropic has provided comprehensive benchmark results, comparing Claude 3.5 Sonnet with other leading models:
+
+- Outperformed GPT-4 on 77% of benchmarks tested.
+- Achieved top scores on MT-Bench, surpassing GPT-4 and Claude 3 Opus.
+- Excelled in Python coding tasks, outscoring GPT-4 by 22.5%.
+
+## Ethical Considerations
+
+Anthropic remains committed to responsible AI development:
+
+- Claude 3.5 Sonnet maintains strong safeguards against misuse.
+- The model refuses to engage in illegal activities or produce explicit content.
+- It's designed to be helpful while avoiding potential harms.
+
+## Availability and Pricing
+
+Claude 3.5 Sonnet is now available through Anthropic's API:
+
+- Priced at $15/million tokens for input and $15/million tokens for output.
+- 100K context window at launch, with plans to expand.
+- New API features including JSON mode and reproducible outputs.
+
+## Looking Ahead
+
+While Claude 3.5 Sonnet represents a significant advancement, Anthropic acknowledges that work remains to be done. They're actively addressing areas for improvement and continuing research into AI safety and capability.
+
+For those interested in exploring Claude 3.5 Sonnet's capabilities, Anthropic encourages signing up for API access and trying out the model firsthand.
+
+This release marks another milestone in Anthropic's journey to develop safe and capable AI systems, and we look forward to seeing how Claude 3.5 Sonnet will be applied in various fields and industries.
+
+
+File: _posts/2023-06-27-latest-updates-on-claude-ai.md
+---
+title: "The Latest Updates on Claude: Introducing Claude 3.5 and Beyond"
+date: 2023-06-27T10:00:00-04:00
+categories:
+  - blog
+tags:
+  - AI
+  - Claude
+  - Anthropic
+  - Language Models
+---
+
+As an AI consultant, staying up-to-date with the latest advancements in artificial intelligence is crucial. Today, we're diving into the recent updates to Claude, the AI assistant developed by Anthropic. Let's explore the introduction of Claude 3.5 and other exciting developments.
+
+## Introducing Claude 3.5
+
+Anthropic has recently released Claude 3.5, the latest iteration of their AI language model. This update brings significant improvements in various areas:
+
+1. **Enhanced Language Understanding**: Claude 3.5 demonstrates a more nuanced grasp of context and intent, leading to more accurate and relevant responses.
+
+2. **Improved Multi-turn Conversations**: The model now maintains context more effectively over longer conversations, making interactions feel more natural and coherent.
+
+3. **Expanded Knowledge Base**: Claude 3.5 has been trained on more recent data, allowing it to discuss current events and recent developments across various fields.
+
+4. **Better Code Generation and Analysis**: For developers and data scientists, Claude 3.5 offers improved capabilities in code generation, debugging, and explanation.
+
+## Other Notable Updates
+
+Beyond the release of Claude 3.5, Anthropic has made several other noteworthy improvements:
+
+- **Ethical AI Enhancements**: Anthropic continues to refine Claude's ethical guidelines, ensuring responsible AI use while maintaining versatility.
+- **Multilingual Capabilities**: Claude now supports a wider range of languages, making it more accessible to global users.
+- **Customization Options**: For enterprise users, Anthropic is exploring ways to allow for more customized versions of Claude tailored to specific industry needs.
+
+## Implications for AI Consulting
+
+These updates to Claude have significant implications for AI consulting:
+
+1. **More Sophisticated Solutions**: With Claude 3.5's enhanced capabilities, we can develop more advanced AI-driven solutions for clients.
+2. **Improved Client Interactions**: The better conversational abilities allow for more natural interactions when using Claude in client-facing applications.
+3. **Ethical Considerations**: Anthropic's focus on ethical AI aligns well with the growing demand for responsible AI use in business contexts.
+
+## Looking Ahead
+
+As Claude continues to evolve, we can expect even more exciting developments. Anthropic's commitment to safe and ethical AI development, combined with their focus on enhancing Claude's capabilities, promises a bright future for AI assistants in various industries.
+
+Stay tuned for more updates as we continue to explore the latest in AI technology and its applications in business consulting.
+
+
+File: _posts/2023-06-28-The-Revolution-of-Generative-AI-in-Content-Creation.md
+---
+title: "The Revolution of Generative AI in Content Creation"
+date: 2023-06-28
+categories:
+  - AI
+  - Generative AI
+tags:
+  - AI
+  - Generative AI
+  - Content Creation
+---
+
+Generative AI is transforming how we create content across various industries...
+
+[Rest of the blog post content]
+
+
+File: _posts/2023-06-29-Emerging-Trends-in-AI:-What-to-Watch-in-2023.md
+---
+title: "Emerging Trends in AI: What to Watch in 2023"
+date: 2023-06-29
+categories:
+  - AI
+  - New AI
+tags:
+  - AI
+  - Trends
+  - Innovation
+---
+
+As we move further into 2023, several exciting trends are shaping the AI landscape...
+
+[Rest of the blog post content]
+
+
+File: _posts/2023-06-30-Developing-a-Robust-AI-Strategy-for-Your-Business.md
+---
+title: "Developing a Robust AI Strategy for Your Business"
+date: 2023-06-30
+categories:
+  - AI
+  - AI Strategy
+tags:
+  - AI
+  - Business Strategy
+  - Digital Transformation
+---
+
+In today's rapidly evolving technological landscape, having a solid AI strategy is crucial for businesses...
+
+[Rest of the blog post content]
+
+
+File: _posts/2023-07-01-Understanding-Large-Language-Models:-Capabilities-and-Limitations.md
+---
+title: "Understanding Large Language Models: Capabilities and Limitations"
+date: 2023-07-01
+categories:
+  - AI
+  - LLMs
+tags:
+  - AI
+  - Language Models
+  - Natural Language Processing
+---
+
+Large Language Models (LLMs) have become a cornerstone of modern AI applications...
+
+[Rest of the blog post content]
+
+
+File: _posts/2023-07-02-Demystifying-Machine-Learning:-A-Beginner's-Guide.md
+---
+title: "Demystifying Machine Learning: A Beginner's Guide"
+date: 2023-07-02
+categories:
+  - Machine Learning
+tags:
+  - ML
+  - AI
+  - Data Science
+---
+
+Machine Learning is often seen as a complex field, but at its core, it's about teaching computers to learn from data...
+
+[Rest of the blog post content]
+
+
+File: _posts/2023-07-03-Quantum-Computing:-The-Next-Frontier-in-Computational-Power.md
+---
+title: "Quantum Computing: The Next Frontier in Computational Power"
+date: 2023-07-03
+categories:
+  - Quantum Computing
+tags:
+  - Quantum
+  - Computing
+  - Technology
+---
+
+Quantum computing promises to revolutionize our approach to solving complex problems...
+
+[Rest of the blog post content]
+
+
+File: _posts/2023-07-04-The-Promise-of-Quantum-Cryptography-in-Cybersecurity.md
+---
+title: "The Promise of Quantum Cryptography in Cybersecurity"
+date: 2023-07-04
+categories:
+  - Cryptography
+  - Quantum Cryptography
+tags:
+  - Quantum
+  - Cybersecurity
+  - Encryption
+---
+
+As quantum computing advances, so does the field of quantum cryptography...
+
+[Rest of the blog post content]
+
+
+File: _posts/2023-07-05-AI-Conferences-Around-the-World:-A-Personal-Journey.md
+---
+title: "AI Conferences Around the World: A Personal Journey"
+date: 2023-07-05
+categories:
+  - Personal
+  - Travels
+tags:
+  - Conferences
+  - AI
+  - Professional Development
+---
+
+Over the past year, I've had the opportunity to attend AI conferences across the globe...
+
+[Rest of the blog post content]
+
+
+
+=== _pages directory ===
+
+File: _pages/about.md
+---
+title: "About"
+permalink: /about/
+---
+
+John Bartlett is an experienced AI consultant specializing in...
+
+[Add more content about yourself and your expertise]
+
+
+File: _pages/blog-tree.md
+---
+title: "Blog Categories"
+layout: single
+permalink: /blog-tree/
+---
+
+## AI
+- [Generative AI](/categories/generative-ai)
+- [New AI](/categories/new-ai)
+- [AI Strategy](/categories/ai-strategy)
+- [LLMs](/categories/llms)
+
+## Machine Learning
+- [All ML Posts](/categories/ml)
+
+## Quantum Computing
+- [All Quantum Posts](/categories/quantum)
+
+## Cryptography
+- [Quantum Cryptography](/categories/quantum-cryptography)
+
+## Personal
+- [Travels](/categories/travels)
+- [Photos](/categories/photos)
+- [Thoughts](/categories/thoughts)
+- [Philosophy](/categories/philosophy)
+
+
+File: _pages/category-archive.md
+---
+title: "Posts by Category"
+layout: categories
+permalink: /categories/
+author_profile: true
+---
+
+
+File: _pages/posts.md
+---
+title: "Posts"
+permalink: /posts/
+layout: posts
+author_profile: true
+---
+
+
+File: _pages/tag-archive.md
+---
+title: "Posts by Tag"
+layout: tags
+permalink: /tags/
+author_profile: true
+---
+
+
+
+=== Custom CSS ===
+
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Custom styles
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page__hero--overlay {
+  padding: 4em 0;
+  
+  .page__title {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  }
+}
+
+.nav__list .nav__items {
+  font-size: 0.9em;
+}
+
+.archive__item-title {
+  font-size: 1.3em;
+}
