@@ -1,0 +1,1 @@
+---\nlayout: default\ntitle: About\n---\n\n![Picture of Me](path/to/your/picture.jpg)

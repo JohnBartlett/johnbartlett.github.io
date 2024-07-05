@@ -1,0 +1,11 @@
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+
+# Site settings
+title: "John Bartlett's Blog"
+description: "A professional blog using the Minimal Mistakes Jekyll theme."
+lang: en-US
+header_pages:
+  - /about/
+  - /contact/
