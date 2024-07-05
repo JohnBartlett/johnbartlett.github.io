@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Developing a Robust AI Strategy with Google Gemini 1.5 Pro",
+        "excerpt":"Introduction The unveiling of Google’s Gemini 1.5 Pro marks a significant milestone in generative AI, offering new possibilities for businesses looking to innovate and stay competitive. This article explores how businesses can integrate Google Gemini 1.5 Pro into their AI strategy to enhance operations and create new value. Features of...","categories": ["generative AI"],
+        "tags": ["Google Gemini 1.5 Pro","AI strategy","business innovation"],
+        "url": "/generative%20ai/2023/06/30/Developing-a-Robust-AI-Strategy-for-Your-Business/",
+        "teaser": null
+      },{
         "title": "",
         "excerpt":" ","categories": ["blog"],
         "tags": ["AI"],
@@ -27,12 +33,6 @@ var store = [{
         "excerpt":" ","categories": ["blog"],
         "tags": ["AI"],
         "url": "/blog/2024/07/05/Emerging-Trends-in-AI-What-to-Watch-in-2023/",
-        "teaser": null
-      },{
-        "title": "",
-        "excerpt":" ","categories": ["blog"],
-        "tags": ["AI"],
-        "url": "/blog/2024/07/05/Developing-a-Robust-AI-Strategy-for-Your-Business/",
         "teaser": null
       },{
         "title": "",
