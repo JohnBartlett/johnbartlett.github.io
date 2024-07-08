@@ -1,0 +1,10 @@
+<!-- _includes/header.html -->
+
+<nav>
+  <ul>
+    {% for page in site.header_pages %}
+      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+

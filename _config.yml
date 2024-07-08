@@ -1,11 +1,18 @@
-remote_theme: mmistakes/minimal-mistakes
+# _config.yml
+
+title: "John Bartlett's Blog"
+description: "A professional blog using the Minimal Mistakes Jekyll theme."
+theme: minimal-mistakes-jekyll
+lang: en-US
+
 plugins:
+  - jekyll-feed
   - jekyll-include-cache
 
 # Site settings
-title: "John Bartlett's Blog"
-description: "A professional blog using the Minimal Mistakes Jekyll theme."
-lang: en-US
+remote_theme: "mmistakes/minimal-mistakes"
 header_pages:
-  - /about/
-  - /contact/
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
