@@ -1,1098 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John F. Bartlett - AI Integration & Technology Strategy</title>
-    <style>
-        /* Base styles */
-        :root {
-            --primary-color: #0066cc;
-            --secondary-color: #2c3e50;
-            --text-color: #333;
-            --light-color: #f4f4f4;
-            --dark-color: #333;
-            --success-color: #2ecc71;
-            --border-radius: 5px;
-            --accent-color: #1e90ff;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-color);
-        }
-        
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        img {
-            max-width: 100%;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            overflow: hidden;
-        }
-        
-        /* Header */
-        header {
-            background-color: var(--secondary-color);
-            color: #fff;
-            padding: 3rem 0;
-        }
-        
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 5px solid var(--primary-color);
-            margin-bottom: 1.5rem;
-        }
-        
-        .header-text h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .header-text p {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* Navbar */
-        nav {
-            background-color: var(--dark-color);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-        
-        nav ul li {
-            margin: 0 1.5rem;
-        }
-        
-        nav ul li a {
-            color: #fff;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        /* Sections */
-        section {
-            padding: 4rem 0;
-        }
-        
-        .section-title {
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 2.5rem;
-            color: var(--secondary-color);
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: var(--primary-color);
-            margin: 0.5rem auto;
-        }
-        
-        /* About */
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .about-text {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.1rem;
-        }
-        
-        .about-text p {
-            margin-bottom: 1.5rem;
-        }
-        
-        /* Skills */
-        .skills-container {
-            background-color: #fff;
-            padding: 2rem 0;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .skill-category {
-            background: var(--light-color);
-            border-radius: var(--border-radius);
-            padding: 1.5rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .skill-category:hover {
-            transform: translateY(-5px);
-        }
-        
-        .skill-category h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            text-align: center;
-            font-size: 1.3rem;
-        }
-        
-        .skill-list {
-            list-style: disc;
-            padding-left: 1.5rem;
-        }
-        
-        .skill-list li {
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Services */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .service-card {
-            background: #fff;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .service-icon {
-            height: 120px;
-            background-color: var(--primary-color);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-        }
-        
-        .service-info {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .service-title {
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-            font-size: 1.4rem;
-            text-align: center;
-        }
-        
-        .service-description {
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-        }
-        
-        .learn-more {
-            align-self: center;
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        
-        .learn-more:hover {
-            background: var(--accent-color);
-            text-decoration: none;
-            color: white;
-        }
-        
-        /* Experience */
-        .timeline {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: var(--primary-color);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
-        
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            width: 50%;
-            box-sizing: border-box;
-        }
-        
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            border: 4px solid var(--primary-color);
-            border-radius: 50%;
-            top: 15px;
-            z-index: 1;
-        }
-        
-        .left {
-            left: 0;
-        }
-        
-        .right {
-            left: 50%;
-        }
-        
-        .left::after {
-            right: -12px;
-        }
-        
-        .right::after {
-            left: -12px;
-        }
-        
-        .timeline-content {
-            padding: 20px;
-            background-color: white;
-            border-radius: var(--border-radius);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .timeline-date {
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        .timeline-role {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-        
-        .timeline-company {
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-        
-        /* Contact */
-        .contact-form {
-            max-width: 700px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 2.5rem;
-            border-radius: var(--border-radius);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: var(--border-radius);
-            font-size: 1rem;
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--primary-color);
-            color: #fff;
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        
-        .btn:hover {
-            background: var(--accent-color);
-        }
-        
-        /* Blog Section */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .blog-card {
-            background: #fff;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .blog-img {
-            height: 200px;
-            background-color: var(--secondary-color);
-            overflow: hidden;
-        }
-        
-        .blog-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .blog-card:hover .blog-img img {
-            transform: scale(1.05);
-        }
-        
-        .blog-info {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .blog-date {
-            color: var(--primary-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .blog-title {
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-            font-size: 1.3rem;
-        }
-        
-        .blog-excerpt {
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-            color: #666;
-        }
-        
-        .read-more {
-            align-self: flex-start;
-            display: inline-block;
-            color: var(--primary-color);
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-        
-        .read-more:hover {
-            color: var(--accent-color);
-            transform: translateX(5px);
-        }
-        
-        .view-all-posts {
-            display: block;
-            text-align: center;
-            margin: 1rem auto;
-            background: var(--primary-color);
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: background 0.3s;
-            width: fit-content;
-        }
-        
-        .view-all-posts:hover {
-            background: var(--accent-color);
-            text-decoration: none;
-            color: white;
-        }
-        
-        /* Social Icons */
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 3rem;
-        }
-        
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: var(--dark-color);
-            color: #fff;
-            border-radius: 50%;
-            margin: 0 0.8rem;
-            transition: all 0.3s;
-            font-size: 1.2rem;
-        }
-        
-        .social-icons a:hover {
-            background: var(--primary-color);
-            transform: translateY(-5px);
-        }
-        
-        /* Languages */
-        .languages {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .language-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .language-icon {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-        }
-        
-        /* Footer */
-        footer {
-            background: var(--secondary-color);
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header-text h1 {
-                font-size: 2rem;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-            
-            .timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .timeline-item::after {
-                left: 20px;
-            }
-            
-            .left::after, .right::after {
-                left: 20px;
-            }
-            
-            .right {
-                left: 0;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="/api/placeholder/180/180" alt="John F. Bartlett" class="profile-img">
-                <div class="header-text">
-                    <h1>John F. Bartlett</h1>
-                    <p>AI Integration Specialist | Technology Strategist | Project Leader</p>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>With over 20 years of leadership in complex technical projects, I specialize in helping businesses prepare for and execute AI integration into their processes. Based in Saint Petersburg, Florida, I guide organizations through technological transformations that deliver orders-of-magnitude improvements in efficiency and capability.</p>
+<button 
+                    onclick="navigateTo('blog')"
+                    class="text-blue-600 hover:text-blue-800 mb-6 flex items-center"
+                >
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back to Blog
+                </button>
+                
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">The Future of AI in Healthcare</h1>
+                <p class="text-gray-500 mb-8">February 15, 2025</p>
+                
+                <div class="prose max-w-none blog-content">
+                    <p class="mb-4">
+                        Artificial intelligence is transforming healthcare in remarkable ways, from improving diagnostic accuracy to personalizing treatment plans and streamlining hospital operations. As we look to the future, the potential for AI to revolutionize healthcare is immense.
+                    </p>
                     
-                    <p>My background spans multiple industries including finance, healthcare, manufacturing, and retail, with deep expertise in AI/ML, NLP, cloud infrastructure, and large language models. I've successfully led teams through the development of innovative solutions like AI-powered chatbots, LLM implementations, and infrastructure modernization initiatives.</p>
+                    <h2>Improved Diagnostics and Early Detection</h2>
+                    <p class="mb-4">
+                        One of the most promising applications of AI in healthcare is in diagnostic imaging. Machine learning algorithms can analyze medical images like X-rays, MRIs, and CT scans with incredible precision, often detecting abnormalities that might be missed by the human eye. These systems are particularly effective at identifying early signs of diseases such as cancer, potentially saving countless lives through early intervention.
+                    </p>
                     
-                    <p>As a consultant and project leader, I focus on translating complex technical concepts into actionable business strategies, ensuring stakeholder alignment and delivering tangible results. My approach combines technical depth with business acumen to create solutions that drive real value.</p>
-                </div>
-                
-                <div class="languages">
-                    <div class="language-item">
-                        <div class="language-icon">EN</div>
-                        <span>English (Native)</span>
-                    </div>
-                    <div class="language-item">
-                        <div class="language-icon">IT</div>
-                        <span>Italian (Fluent)</span>
-                    </div>
-                    <div class="language-item">
-                        <div class="language-icon">FR</div>
-                        <span>French (Conversational)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Expertise Section -->
-    <section id="expertise" class="skills-container">
-        <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            
-            <div class="about-text" style="margin-bottom: 3rem;">
-                <p>With a diverse technical background spanning AI/ML, cloud infrastructure, and project management, I bring a holistic approach to technology challenges. My expertise is built on hands-on implementation experience across multiple industries and technological domains.</p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> AI & Machine Learning</h3>
-                    <ul class="skill-list">
-                        <li><strong>Large Language Models (LLM):</strong> Developed and deployed custom LLM solutions with 500GB+ of private data training</li>
-                        <li><strong>Natural Language Processing:</strong> Implemented NLP solutions for automated text analysis, classification, and response generation</li>
-                        <li><strong>Frameworks:</strong> Expert with TensorFlow, Langchain, Pinecone, scikit-learn, and NLTK</li>
-                        <li><strong>Chatbot Development:</strong> Created AI-powered conversational interfaces that increased productivity by 40% in enterprise settings</li>
-                        <li><strong>Generative AI:</strong> Implemented systems using GPT, Claude, and Gemini models with custom data pipelines</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud Infrastructure</h3>
-                    <ul class="skill-list">
-                        <li><strong>AWS:</strong> Architected solutions using EC2, S3, VPC, Lambda, and comprehensive cloud infrastructure</li>
-                        <li><strong>Google Cloud Platform:</strong> Implemented GCP solutions with particular expertise in AI/ML services and data processing pipelines</li>
-                        <li><strong>Microsoft Azure:</strong> Deployed and managed Azure-based solutions for enterprise clients</li>
-                        <li><strong>Migration Strategy:</strong> Developed and executed phased migration plans that minimize disruption and optimize costs</li>
-                        <li><strong>Infrastructure Optimization:</strong> Reduced IT costs by 30% through strategic cloud architecture planning</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-project-diagram"></i> Project Leadership</h3>
-                    <ul class="skill-list">
-                        <li><strong>Methodologies:</strong> Led projects using Agile/Scrum, Waterfall, and hybrid approaches tailored to client needs</li>
-                        <li><strong>Risk Management:</strong> Developed comprehensive risk identification and mitigation strategies for complex technical projects</li>
-                        <li><strong>Stakeholder Alignment:</strong> Successfully bridged communication between technical teams and business stakeholders</li>
-                        <li><strong>Team Coordination:</strong> Managed distributed teams across time zones and organizational boundaries</li>
-                        <li><strong>Disaster Recovery:</strong> Designed and implemented comprehensive DR plans for mission-critical systems</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Development</h3>
-                    <ul class="skill-list">
-                        <li><strong>Languages:</strong> Python, SQL, Node.js, Bash scripting for automation and data processing</li>
-                        <li><strong>Containerization:</strong> Docker, Kubernetes for scalable, portable application deployment</li>
-                        <li><strong>DevOps Tools:</strong> Jira, Confluence, Git, Jenkins for continuous integration/delivery</li>
-                        <li><strong>Communication Systems:</strong> Designed and implemented VOIP systems using Asterisk and Cisco solutions</li>
-                        <li><strong>Data Management:</strong> Experienced with CRM implementation, data warehousing, and business intelligence</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <h3 style="margin-bottom: 1rem;">Certifications</h3>
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-                    <div style="background: white; padding: 1rem; border-radius: var(--border-radius); box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
-                        <i class="fab fa-aws" style="font-size: 2rem; color: var(--primary-color);"></i>
-                        <p style="margin-top: 0.5rem;">AWS Solutions Architect</p>
-                    </div>
-                    <div style="background: white; padding: 1rem; border-radius: var(--border-radius); box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
-                        <i class="fab fa-google" style="font-size: 2rem; color: var(--primary-color);"></i>
-                        <p style="margin-top: 0.5rem;">Google Project Management</p>
-                    </div>
-                    <div style="background: white; padding: 1rem; border-radius: var(--border-radius); box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
-                        <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--primary-color);"></i>
-                        <p style="margin-top: 0.5rem;">Google Cyber Security Analyst</p>
-                    </div>
-                    <div style="background: white; padding: 1rem; border-radius: var(--border-radius); box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
-                        <i class="fas fa-phone" style="font-size: 2rem; color: var(--primary-color);"></i>
-                        <p style="margin-top: 0.5rem;">Cisco Call Manager</p>
-                    </div>
+                    <h2>Personalized Medicine</h2>
+                    <p class="mb-4">
+                        AI is enabling a shift toward truly personalized medicine by analyzing vast amounts of patient data to identify patterns and make predictions about treatment outcomes. By considering an individual's genetic makeup, lifestyle factors, and medical history, AI systems can help physicians develop tailored treatment plans with higher efficacy and fewer side effects.
+                    </p>
+                    
+                    <h2>Drug Discovery and Development</h2>
+                    <p class="mb-4">
+                        The traditional drug development process is time-consuming and expensive, often taking years and billions of dollars to bring a new medication to market. AI is accelerating this process by predicting how different compounds will interact with specific biological targets, enabling researchers to identify promising drug candidates more quickly and efficiently.
+                    </p>
+                    
+                    <h2>Challenges and Ethical Considerations</h2>
+                    <p class="mb-4">
+                        Despite its potential, the integration of AI into healthcare faces significant challenges. Data privacy concerns, the need for regulatory frameworks, and questions about algorithmic bias must be addressed to ensure that AI benefits all patients equitably. Additionally, maintaining the human element of healthcare remains crucial, as empathy and intuition cannot be replaced by algorithms.
+                    </p>
+                    
+                    <h2>Conclusion</h2>
+                    <p class="mb-4">
+                        The future of AI in healthcare is bright, with the potential to improve patient outcomes, reduce costs, and make quality healthcare more accessible. As researchers, healthcare providers, and policymakers continue to collaborate, we can expect to see AI become an increasingly integral part of our healthcare system, working alongside human professionals to deliver the best possible care.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            
-            <div class="about-text" style="margin-bottom: 3rem;">
-                <p>I offer specialized consulting services designed to help businesses leverage AI and modern cloud technologies to achieve transformative results. Each engagement is tailored to your specific needs, with a focus on delivering measurable business value.</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-title">AI Integration Strategy</h3>
-                        <p class="service-description">I develop comprehensive roadmaps for integrating AI into your business processes, with a focus on practical implementation and ROI. My approach includes:</p>
-                        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                            <li>Technology landscape assessment and readiness evaluation</li>
-                            <li>Identification of high-impact AI opportunities aligned with business goals</li>
-                            <li>Phased implementation plans with clear milestones and success metrics</li>
-                            <li>Technology selection guidance and vendor evaluation</li>
-                            <li>Change management strategies to ensure user adoption</li>
-                        </ul>
-                        <p style="font-style: italic; margin-bottom: 1.5rem; color: #666;">Success Story: Reduced IT costs by 30% through strategic cloud migration for a retail client.</p>
-                        <a href="#contact" class="learn-more">Modernize Your Infrastructure</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-title">Technical Project Leadership</h3>
-                        <p class="service-description">I lead complex technical initiatives from conception to completion, bringing structure and clarity to challenging projects. My leadership approach includes:</p>
-                        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                            <li>End-to-end project planning and execution</li>
-                            <li>Strategic risk identification and mitigation</li>
-                            <li>Cross-functional team coordination and leadership</li>
-                            <li>Agile methodology implementation and coaching</li>
-                            <li>Clear stakeholder communication and expectation management</li>
-                        </ul>
-                        <p style="font-style: italic; margin-bottom: 1.5rem; color: #666;">Success Story: Led a $2.5M modernization project that increased operational efficiency by 25%.</p>
-                        <a href="#contact" class="learn-more">Lead Your Next Project</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-title">Compliance & Security</h3>
-                        <p class="service-description">I ensure your technology initiatives meet regulatory requirements while maintaining robust security. My comprehensive approach includes:</p>
-                        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                            <li>Compliance gap analysis for SOX, PCI, HIPAA, and other frameworks</li>
-                            <li>Security architecture design and implementation</li>
-                            <li>Data protection and privacy compliance (GDPR, CCPA)</li>
-                            <li>Secure cloud configuration and monitoring</li>
-                            <li>Security policy development and staff training</li>
-                        </ul>
-                        <p style="font-style: italic; margin-bottom: 1.5rem; color: #666;">Success Story: Implemented comprehensive HIPAA compliance for a multi-office healthcare practice.</p>
-                        <a href="#contact" class="learn-more">Secure Your Systems</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-title">Business Process Automation</h3>
-                        <p class="service-description">I identify and implement automation opportunities that leverage AI to reduce manual effort and increase productivity. My services include:</p>
-                        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                            <li>Process analysis and optimization mapping</li>
-                            <li>AI-powered workflow automation design</li>
-                            <li>Integration with existing business systems</li>
-                            <li>ROI measurement and performance tracking</li>
-                            <li>Custom automation solution development</li>
-                        </ul>
-                        <p style="font-style: italic; margin-bottom: 1.5rem; color: #666;">Success Story: Implemented AI-driven automation in manufacturing, boosting efficiency by 30%.</p>
-                        <a href="#contact" class="learn-more">Automate Your Workflows</a>
-                    </div>
-                </div>
-                        <p style="font-style: italic; margin-bottom: 1.5rem; color: #666;">Success Story: Helped a law firm improve productivity by 40% through strategic AI integration.</p>
-                        <a href="#contact" class="learn-more">Discuss Your AI Strategy</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-title">LLM & Chatbot Development</h3>
-                        <p class="service-description">I design and implement custom Large Language Model solutions and AI-powered conversational interfaces that transform customer experience and operational efficiency. Services include:</p>
-                        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                            <li>Custom LLM development with private data training (500GB+)</li>
-                            <li>Chatbot design and implementation for service and sales</li>
-                            <li>Integration with existing systems (CRM, ERP, etc.)</li>
-                            <li>Ongoing model refinement and performance optimization</li>
-                            <li>Training and documentation for internal teams</li>
-                        </ul>
-                        <p style="font-style: italic; margin-bottom: 1.5rem; color: #666;">Success Story: Deployed a custom LLM that reduced processing time by 40% for a financial services client.</p>
-                        <a href="#contact" class="learn-more">Explore LLM Solutions</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-title">Cloud Infrastructure Modernization</h3>
-                        <p class="service-description">I transform legacy IT environments with modern cloud-based solutions that improve scalability, reduce costs, and enable advanced capabilities including AI. My services cover:</p>
-                        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                            <li>Cloud readiness assessment and migration planning</li>
-                            <li>Tailored solutions using AWS, GCP, and Azure</li>
-                            <li>Zero-downtime migration strategies for critical systems</li>
-                            <li>Cost optimization and governance frameworks</li>
-                            <li>Security and compliance implementation</li>
-                        </ul>
-    
-    <!-- Experience Section -->
-    <section id="experience" class="exp-section">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            
-            <div class="about-text" style="margin-bottom: 3rem;">
-                <p>My career spans over two decades of leading complex technical projects across multiple industries. This diverse experience gives me a unique perspective on technology implementation and AI integration that bridges the gap between technical possibilities and business realities.</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2003 - Present</div>
-                        <div class="timeline-role">Independent Consultant</div>
-                        <div class="timeline-company">JF Bartlett & Associates</div>
-                        <p>As the principal consultant, I provide comprehensive technology strategy and implementation services to small and medium businesses across multiple industries:</p>
-                        <ul style="margin-top: 0.75rem; padding-left: 1.2rem;">
-                            <li>Developed and deployed AI-powered chatbots that increased productivity by 40% for a law firm</li>
-                            <li>Led cross-functional teams in building LLM solutions using Google AI infrastructure (GCP, TensorFlow, Pinecone)</li>
-                            <li>Implemented AI-driven automation in manufacturing, boosting efficiency by 30%</li>
-                            <li>Designed and executed cloud migrations that improved scalability and reduced costs</li>
-                            <li>Created HIPAA and PCI compliant systems for healthcare and e-commerce clients</li>
-                            <li>Developed strategic technology roadmaps aligning IT investments with business goals</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="timeline-date">5/2023 - 12/2023</div>
-                        <div class="timeline-role">Lead Infrastructure Project Manager</div>
-                        <div class="timeline-company">EMI Industries</div>
-                        <p>Led comprehensive infrastructure assessment and modernization initiatives for manufacturing clients:</p>
-                        <ul style="margin-top: 0.75rem; padding-left: 1.2rem;">
-                            <li>Directed AI-driven infrastructure modernization programs, enhancing operational capabilities</li>
-                            <li>Conducted detailed network and infrastructure assessments using Dell and Cisco systems</li>
-                            <li>Identified critical risks and developed effective mitigation strategies</li>
-                            <li>Orchestrated the transition from on-premises data centers to cloud solutions (Azure, AWS, GCP)</li>
-                            <li>Ensured alignment between technical teams and business stakeholders for seamless decision-making</li>
-                            <li>Improved operational efficiency and user satisfaction through strategic technology implementations</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">4/2022 - 5/2023</div>
-                        <div class="timeline-role">Project Manager, AI Implementation</div>
-                        <div class="timeline-company">Undisclosed Client (USA)</div>
-                        <p>Provided comprehensive IT strategy, management, and development for an AI-based product proof of concept:</p>
-                        <ul style="margin-top: 0.75rem; padding-left: 1.2rem;">
-                            <li>Managed the development, testing, and deployment of a large language model using 500GB of private data</li>
-                            <li>Led development on Google AI infrastructure using Pinecone, Langchain, Python, and Node.js</li>
-                            <li>Reduced processing time by 40% through optimized AI implementation</li>
-                            <li>Created comprehensive project plans, risk management frameworks, and stakeholder communication</li>
-                            <li>Coordinated cross-time-zone teams, ensuring on-budget and timely project delivery</li>
-                            <li>Successfully presented projects to stakeholders and secured additional funding based on results</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="timeline-date">1/2019 - 3/2022</div>
-                        <div class="timeline-role">Director, Technology</div>
-                        <div class="timeline-company">Kashwere / TMG Kreations LLC</div>
-                        <p>Provided strategic technology leadership for a Chicago-based online retailer:</p>
-                        <ul style="margin-top: 0.75rem; padding-left: 1.2rem;">
-                            <li>Led a $2.5M cloud modernization project, increasing operational efficiency by 25%</li>
-                            <li>Successfully migrated infrastructure to Google Cloud, reducing IT costs by 30%</li>
-                            <li>Redesigned virtual services environment, cloud services, and on-site hardware</li>
-                            <li>Optimized ERP systems, payment processing, and e-commerce platforms</li>
-                            <li>Developed custom SQL scripts to streamline data exports and improve reporting</li>
-                            <li>Implemented and managed systems including Everest, Magento, Microsoft SQL DB, and VMware</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">11/2012 - 11/2018</div>
-                        <div class="timeline-role">Director, Information Systems</div>
-                        <div class="timeline-company">Willis Stein & Partners</div>
-                        <p>Managed the complete technology environment for a $3B private equity firm:</p>
-                        <ul style="margin-top: 0.75rem; padding-left: 1.2rem;">
-                            <li>Directed cloud migrations to AWS and Google Cloud, ensuring continuity and compliance</li>
-                            <li>Transferred all IT systems to cloud-hosted solutions, including file, voice, and security services</li>
-                            <li>Implemented comprehensive data security measures and SEC compliance protocols</li>
-                            <li>Managed all IT plans, policies, budgeting, purchasing, and end-user systems</li>
-                            <li>Optimized technology operations to enhance productivity and reduce costs</li>
-                            <li>Advised portfolio companies on technology strategy and implementation</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="timeline-date">1/2010 - 11/2012</div>
-                        <div class="timeline-role">CTO</div>
-                        <div class="timeline-company">MyFootPath</div>
-                        <p>Led technology development and operations for an educational services company:</p>
-                        <ul style="margin-top: 0.75rem; padding-left: 1.2rem;">
-                            <li>Managed development and support teams, ensuring 24x7 system uptime across global operations</li>
-                            <li>Led the development of CRM and data management systems for improved customer insights</li>
-                            <li>Engineered an intelligent call center VOIP system using Asterisk</li>
-                            <li>Supported a 140-person call center with robust technical infrastructure</li>
-                            <li>Implemented analytics solutions to optimize marketing and engagement strategies</li>
-                            <li>Built scalable systems to accommodate rapid business growth</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <p style="font-style: italic; margin-bottom: 1rem;">Earlier career experience includes roles at Zenith Electronics/LG Electronics, Morgan Chase & Associates, Xerox PARC, Sun Microsystems, and other technology leaders.</p>
-                <a href="documents/John_F_Bartlett_CV.pdf" class="btn" style="margin-top: 1rem;">Download Full CV</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Blog Section -->
-    <section id="blog">
-        <div class="container">
-            <h2 class="section-title">Latest Insights</h2>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="/api/placeholder/400/200" alt="AI Integration Strategy">
-                    </div>
-                    <div class="blog-info">
-                        <div class="blog-date">February 24, 2025</div>
-                        <h3 class="blog-title">Implementing Large Language Models for Enterprise: Lessons Learned</h3>
-                        <p class="blog-excerpt">After completing several large-scale LLM deployments across different industries, I've gathered some key insights on what makes these projects succeed or fail. This post explores the critical factors in planning, data preparation, and integration that determine outcomes.</p>
-                        <a href="blog/implementing-llm-for-enterprise.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="/api/placeholder/400/200" alt="Cloud Migration Strategy">
-                    </div>
-                    <div class="blog-info">
-                        <div class="blog-date">February 10, 2025</div>
-                        <h3 class="blog-title">The Hidden Costs of Cloud Migration: What CFOs Need to Know</h3>
-                        <p class="blog-excerpt">While cloud migrations promise cost savings and scalability, many organizations encounter unexpected expenses that undermine ROI. This article examines the most common hidden costs, from data transfer fees to re-architecture requirements, and provides strategies for mitigating them.</p>
-                        <a href="blog/hidden-costs-cloud-migration.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="blog/index.html" class="view-all-posts">View All Posts</a>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" style="background-color: #fff;">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwqvqko" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <!-- Blog Post 2 -->
+        <div id="blogpost2" class="tab-panel">
+            <div class="container mx-auto px-6 py-10 max-w-3xl">
+                <button 
+                    onclick="navigateTo('blog')"
+                    class="text-blue-600 hover:text-blue-800 mb-6 flex items-center"
+                >
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back to Blog
+                </button>
+                
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Building Ethical AI Systems</h1>
+                <p class="text-gray-500 mb-8">January 22, 2025</p>
+                
+                <div class="prose max-w-none blog-content">
+                    <p class="mb-4">
+                        As artificial intelligence becomes increasingly integrated into our daily lives, the ethical implications of these powerful technologies cannot be overlooked. Building ethical AI systems requires a thoughtful approach that considers fairness, transparency, privacy, and accountability at every stage of development.
+                    </p>
+                    
+                    <h2>Fairness and Bias</h2>
+                    <p class="mb-4">
+                        One of the most significant ethical challenges in AI development is addressing bias. AI systems learn from historical data, which often contains existing societal biases. Without careful consideration, these biases can be perpetuated or even amplified by machine learning algorithms, leading to unfair outcomes for certain groups. Developers must actively work to identify and mitigate bias through diverse training data, regular auditing, and inclusive development teams.
+                    </p>
+                    
+                    <h2>Transparency and Explainability</h2>
+                    <p class="mb-4">
+                        As AI systems become more complex, understanding how they arrive at decisions becomes increasingly challenging. This "black box" problem undermines trust and accountability. Ethical AI development prioritizes transparency and explainability, ensuring that users can understand why a system made a particular recommendation or decision. This is especially important in high-stakes domains like healthcare, criminal justice, and financial services.
+                    </p>
+                    
+                    <h2>Privacy and Data Protection</h2>
+                    <p class="mb-4">
+                        AI systems often rely on vast amounts of data, raising concerns about privacy and data protection. Ethical AI development requires robust data governance practices, including obtaining informed consent, anonymizing sensitive information, and implementing strong security measures. Developers should also consider the principle of data minimization, collecting only the information necessary for the system to function effectively.
+                    </p>
+                    
+                    <h2>Accountability and Oversight</h2>
+                    <p class="mb-4">
+                        Who is responsible when an AI system causes harm? Establishing clear lines of accountability is essential for ethical AI development. This includes implementing robust testing and validation procedures, monitoring systems in real-world environments, and creating mechanisms for addressing unintended consequences. Additionally, independent oversight and regulation play crucial roles in ensuring that AI systems meet ethical standards.
+                    </p>
+                    
+                    <h2>Conclusion</h2>
+                    <p class="mb-4">
+                        Building ethical AI systems is not just a technical challenge but a moral imperative. By prioritizing fairness, transparency, privacy, and accountability, developers can create AI technologies that benefit humanity while minimizing potential harms. As AI continues to advance, our commitment to ethical principles must remain steadfast, guiding innovation toward a future where technology serves the common good.
+                    </p>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" class="form-control" placeholder="Subject">
-                </div>
-                <div class="form-group">
-                    <textarea name="message" class="form-control" rows="5" placeholder="How can I help with your AI integration or technology strategy needs?" required></textarea>
-                </div>
-                <button type="submit" class="btn" id="submitBtn">Send Message</button>
-                <div id="status" style="margin-top: 15px; text-align: center; display: none;"></div>
-            </form>
-            
-            <div class="social-icons">
-                <a href="http://linkedin.com/in/johnfbartlett" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:githubpersonal@2heer.com"><i class="fas fa-envelope"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
-    </section>
-    
+    </div>
+
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 John F. Bartlett. All Rights Reserved.</p>
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Your Name</h2>
+                    <p class="text-gray-300 mt-2">AI Engineer & Software Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.1 10.1 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-400">&copy; 2025 Your Name. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Contact Form Script -->
+    <!-- JavaScript for navigation -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            const statusDiv = document.getElementById('status');
-            const submitBtn = document.getElementById('submitBtn');
+        function navigateTo(pageId) {
+            // Hide all tab panels
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
             
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Change button text to loading state
-                    submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
-                    submitBtn.disabled = true;
-                    
-                    // Get form data
-                    const formData = new FormData(contactForm);
-                    const action = contactForm.getAttribute('action');
-                    
-                    // Send form data using fetch API
-                    fetch(action, {
-                        method: 'POST',
-                        body: formData,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        // Show success message
-                        statusDiv.style.display = 'block';
-                        statusDiv.innerHTML = '<div style="color: var(--success-color);"><i class="fas fa-check-circle"></i> Your message has been sent successfully!</div>';
-                        submitBtn.innerHTML = 'Send Message';
-                        submitBtn.disabled = false;
-                        
-                        // Reset form
-                        contactForm.reset();
-                        
-                        // Hide success message after 5 seconds
-                        setTimeout(() => {
-                            statusDiv.style.display = 'none';
-                        }, 5000);
-                    })
-                    .catch(error => {
-                        // Show error message
-                        statusDiv.style.display = 'block';
-                        statusDiv.innerHTML = '<div style="color: #ff3860;"><i class="fas fa-exclamation-circle"></i> There was a problem sending your message. Please try again later.</div>';
-                        submitBtn.innerHTML = 'Send Message';
-                        submitBtn.disabled = false;
-                        
-                        console.error('Error:', error);
-                    });
-                });
+            // Show the selected panel
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update navigation highlighting
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('text-blue-600', 'font-medium');
+                link.classList.add('text-gray-600', 'hover:text-blue-600');
+            });
+            
+            const activeNavLink = document.getElementById('nav-' + pageId);
+            if (activeNavLink) {
+                activeNavLink.classList.remove('text-gray-600', 'hover:text-blue-600');
+                activeNavLink.classList.add('text-blue-600', 'font-medium');
             }
-        });
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
     </script>
 </body>
 </html>
