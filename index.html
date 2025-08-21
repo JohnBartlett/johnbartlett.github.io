@@ -1,1768 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Bartlett | AI Transformation Consultant | 30% Cost Reduction</title>
-  <meta name="description" content="AI Transformation Consultant helping businesses nationwide implement practical AI solutions with measurable ROI: 30% cost reduction, 40% efficiency gains, and 25+ successful projects.">
-  <meta name="keywords" content="AI Consultant, AI Solutions, Business AI Implementation, AI Consulting, AI Expert, Small Business AI Solutions, AI ROI, AI Transformation">
-  
-  <!-- Open Graph tags for social sharing -->
-  <meta property="og:title" content="John Bartlett | AI Transformation Consultant | 30% Cost Reduction">
-  <meta property="og:description" content="AI consultant for businesses nationwide. Delivering practical AI solutions with measurable ROI across healthcare, legal, manufacturing, retail, and hospitality sectors.">
-  
-  <!-- Additional SEO Meta Tags -->
-  <meta name="author" content="John Bartlett, AI Transformation Consultant">
-  <meta name="robots" content="index, follow">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="John Bartlett | AI Transformation Consultant">
-  <meta name="twitter:description" content="AI Transformation Consultant delivering 30% cost reductions and 40% efficiency gains for businesses nationwide.">
-  
-  <!-- Local SEO Meta Tags -->
-  <meta name="geo.region" content="US-FL">
-  <meta name="geo.placename" content="St. Petersburg, Florida">
-  <meta name="geo.position" content="27.7676;-82.6403">
-  <meta name="ICBM" content="27.7676, -82.6403">
-  <meta property="og:url" content="https://johnbartlett.github.io/">
-  <meta property="og:type" content="website">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Password protection scripts - multiple layers of security -->
-  <script src="index.js"></script>
-  <script src="js/auth.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Bartlett | AI Transformation Consultant | 30% Cost Reduction</title>
+    <meta name="description" content="AI Transformation Consultant helping businesses nationwide implement practical AI solutions with measurable ROI: 30% cost reduction, 40% efficiency gains, and 25+ successful projects.">
+    <meta name="keywords" content="AI Consultant, AI Solutions, Business AI Implementation, AI Consulting, AI Expert, Small Business AI Solutions, AI ROI, AI Transformation">
+    <meta property="og:title" content="John Bartlett | AI Transformation Consultant | 30% Cost Reduction">
+    <meta property="og:description" content="AI consultant for businesses nationwide. Delivering practical AI solutions with measurable ROI across healthcare, legal, manufacturing, retail, and hospitality sectors.">
+    <meta property="og:url" content="https://johnbartlett.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="author" content="John Bartlett, AI Transformation Consultant">
+    <meta name="robots" content="index, follow">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Bartlett | AI Transformation Consultant">
+    <meta name="twitter:description" content="AI Transformation Consultant delivering 30% cost reductions and 40% efficiency gains for businesses nationwide.">
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="St. Petersburg, Florida">
+    <meta name="geo.position" content="27.7676;-82.6403">
+    <meta name="ICBM" content="27.7676, -82.6403">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Insert only the new styles for the projects section here, or add to your css/styles.css */
+        .projects {
+            padding: 5rem 0;
+            background: white;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        .project-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+        }
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        .project-category {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .project-content {
+            padding: 1.5rem;
+        }
+        .project-description {
+            color: #64748b;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .project-impact {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .project-metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .metric {
+            text-align: center;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tech-tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        .project-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .btn-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .btn-small.btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-small.btn-outline {
+            background: transparent;
+            color: #667eea;
+            border: 1px solid #667eea;
+        }
+        .btn-small:hover {
+            transform: translateY(-1px);
+        }
+    </style>
 </head>
 <body>
-  <!-- Header/Navigation -->
-  <header>
-    <div class="container">
-      <a href="#" class="logo">
-        <span class="flex items-center">
-          <span class="mr-2" style="color: #0070c9;"><i class="fas fa-brain"></i></span>
-          <span>John F Bartlett</span>
-        </span>
-        <small style="font-size: 0.7em; opacity: 0.8; margin-left: 5px; font-weight: normal; background: linear-gradient(135deg, #0070c9, #5a51de); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">AI Transformation Consultant</small>
-      </a>
-      <nav>
+<header>
+    <nav class="container">
+        <div class="logo">John Bartlett</div>
         <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#services" class="nav-link">AI Services</a></li>
-          <li><a href="#skills" class="nav-link">Expertise</a></li>
-          <li><a href="#projects" class="nav-link">Case Studies</a></li>
-          <li><a href="#tampa-sectors" class="nav-link">Industries</a></li>
-          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-              <i class="fas fa-moon" id="dark-icon"></i>
-              <i class="fas fa-sun" id="light-icon" style="display: none;"></i>
-            </button>
-          </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
+    </nav>
+</header>
 
-  <!-- Hero Section -->
-  <section id="hero">
+<section class="hero">
     <div class="container">
-      <div class="hero-content slide-in-left">
-        <div class="job-title-pill">
-          <span class="apple-nav-pill">AI Transformation Consultant</span>
-        </div>
-        <h1 class="gradient-text mt-6 mb-6">
-          AI Solutions for<br />
-          Nationwide Businesses
-        </h1>
-        <p class="hero-description">
-          I help small and medium businesses in the Tampa/St. Petersburg area implement practical AI solutions that deliver measurable growth, reduce costs by up to 30%, and improve efficiency by 40%.
-        </p>
-        <div class="button-container">
-          <a href="#services" class="apple-button primary">
-            AI Services for Tampa Businesses
-            <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-          <a href="#contact" class="apple-button secondary">
-            <i class="fas fa-calendar-check mr-2"></i>
-            Free AI Consultation
-          </a>
-        </div>
-        
-        <div class="local-business-section" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.1); border-radius: 12px;">
-          <p style="font-weight: 600; margin-bottom: 0.5rem;">Nationwide AI Consulting Services</p>
-          <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">Serving businesses across the United States from St. Petersburg, Florida</p>
-          
-          <div style="display: flex; justify-content: space-between; text-align: center;">
-            <div style="flex: 1; padding: 0.5rem;">
-              <p style="font-size: 1.5rem; font-weight: 700; color: #0070c9;">30%</p>
-              <p style="font-size: 0.8rem;">Average Cost Reduction</p>
+        <div class="hero-content">
+            <h1>AI Transformation for Business Growth</h1>
+            <p class="subtitle">Helping companies implement practical AI and automation solutions for real ROI—30% cost reduction, 40% efficiency gain, 25+ major projects delivered.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Start Your Project
+                </a>
             </div>
-            <div style="flex: 1; padding: 0.5rem;">
-              <p style="font-size: 1.5rem; font-weight: 700; color: #0070c9;">40%</p>
-              <p style="font-size: 0.8rem;">Efficiency Improvement</p>
-            </div>
-            <div style="flex: 1; padding: 0.5rem;">
-              <p style="font-size: 1.5rem; font-weight: 700; color: #0070c9;">25+</p>
-              <p style="font-size: 0.8rem;">Local Businesses Helped</p>
-            </div>
-          </div>
         </div>
-        
-        <div class="connect-section">
-          <p class="connect-text">Quick Connect:</p>
-          <div class="social-links">
-            <a href="#contact" aria-label="AI Consultation" class="social-link">
-              <i class="fas fa-robot"></i>
-            </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="tel:+13127926860" aria-label="Call Direct" class="social-link">
-              <i class="fas fa-phone-alt"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="hero-image slide-in-right">
-        <div class="blob-bg"></div>
-        <div class="profile-image">
-          <div class="profile-card">
-            <div class="profile-card-inner">
-              <svg class="w-40 h-40 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" fill="currentColor"/>
-                <path d="M12 8v4l3 3" fill="none" stroke="currentColor" stroke-width="2"/>
-                <rect x="9" y="2" width="6" height="2" fill="currentColor"/>
-                <path d="M17 7c1.1 0 2 .9 2 2v2.5c0 .83-.67 1.5-1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M7 7c-1.1 0-2 .9-2 2v2.5c0 .83.67 1.5 1.5 1.5H9" fill="none" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  
-  <!-- Services Section -->
-  <section id="services" class="section">
+</section>
+
+<section id="services" class="services">
     <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">Services</span>
-        <h2 class="section-title">
-          AI Transformation <span class="highlight">Services</span>
-        </h2>
-        <p class="section-description">
-          My three-tier approach provides a structured path to AI adoption, designed specifically for small and medium businesses nationwide.
-        </p>
-      </div>
-      
-      <div class="services-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
-        <!-- Assessment Service -->
-        <div class="service-card apple-card animate-on-scroll" data-animation="slide-up" style="display: flex; flex-direction: column; height: 100%;">
-          <div class="service-number" style="background: rgba(0,122,255,0.1); color: #007AFF; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">1</div>
-          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">AI Readiness Assessment</h3>
-          <p style="flex-grow: 1; margin-bottom: 1.5rem; opacity: 0.8;">Comprehensive evaluation of your business processes, data infrastructure, and opportunities for AI implementation.</p>
-          <ul style="list-style-type: none; padding: 0; margin-bottom: 1.5rem;">
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Process analysis & opportunity mapping</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Technology stack evaluation</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Data readiness assessment</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Cost-benefit analysis</li>
-          </ul>
-          <a href="#contact" class="apple-button secondary w-100" style="width: 100%; text-align: center;">Book Assessment</a>
+        <div class="section-title fade-in">
+            <h2>What I Offer</h2>
+            <p class="section-subtitle">Specializing in end-to-end AI and automation—from workflow analysis and vendor selection to custom solution development and nationwide deployments.</p>
         </div>
-        
-        <!-- Roadmap Service -->
-        <div class="service-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="200" style="display: flex; flex-direction: column; height: 100%;">
-          <div class="service-number" style="background: rgba(88,86,214,0.1); color: #5856D6; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">2</div>
-          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">AI Implementation Roadmap</h3>
-          <p style="flex-grow: 1; margin-bottom: 1.5rem; opacity: 0.8;">Strategic planning for integrating AI into your business with clear milestones, resource requirements, and ROI projections.</p>
-          <ul style="list-style-type: none; padding: 0; margin-bottom: 1.5rem;">
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Prioritized implementation strategy</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Technology selection guidance</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Budget and timeline planning</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> ROI and KPI definition</li>
-          </ul>
-          <a href="#contact" class="apple-button secondary w-100" style="width: 100%; text-align: center;">Request Roadmap</a>
-        </div>
-        
-        <!-- Implementation Service -->
-        <div class="service-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="400" style="display: flex; flex-direction: column; height: 100%;">
-          <div class="service-number" style="background: rgba(255,69,58,0.1); color: #FF3B30; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">3</div>
-          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">AI Solution Implementation</h3>
-          <p style="flex-grow: 1; margin-bottom: 1.5rem; opacity: 0.8;">End-to-end management of AI implementation projects, from development to deployment and staff training.</p>
-          <ul style="list-style-type: none; padding: 0; margin-bottom: 1.5rem;">
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Project management & execution</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Technology integration</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Staff training & change management</li>
-            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Ongoing support & optimization</li>
-          </ul>
-          <a href="#contact" class="apple-button primary w-100" style="width: 100%; text-align: center;">Start Implementation</a>
-        </div>
-      </div>
-      
-      <!-- Services CTA -->
-      <div class="services-cta mt-12 animate-on-scroll" data-animation="fade-in">
-        <div class="cta-container bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-8 rounded-2xl">
-          <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 class="text-2xl font-semibold mb-3">Ready to Transform Your Business?</h3>
-              <p class="mb-6 text-white/80">My clients achieve on average 30% cost reduction and 40% efficiency gains through strategic AI implementation.</p>
-              <div class="flex flex-wrap gap-4">
-                <div class="flex items-center">
-                  <div class="mr-3 text-white/90">
-                    <i class="fas fa-clock text-xl"></i>
-                  </div>
-                  <div>
-                    <p class="font-medium">Quick Implementation</p>
-                    <p class="text-sm text-white/70">3-6 weeks average</p>
-                  </div>
-                </div>
-                <div class="flex items-center">
-                  <div class="mr-3 text-white/90">
-                    <i class="fas fa-dollar-sign text-xl"></i>
-                  </div>
-                  <div>
-                    <p class="font-medium">ROI Focused</p>
-                    <p class="text-sm text-white/70">Measurable results</p>
-                  </div>
-                </div>
-              </div>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon"><i class="fas fa-brain"></i></div>
+                <h3>AI Adoption Roadmaps</h3>
+                <p>Guiding clients through assessing workforce, use cases, and practical AI implementation step by step.</p>
             </div>
-            <div class="text-center md:text-right">
-              <a href="#contact" class="apple-button bg-white text-blue-600 hover:bg-gray-100 inline-block px-6 py-3">
-                <i class="fas fa-calendar-check mr-2"></i>
-                Book Your Free AI Strategy Call
-              </a>
-              <p class="mt-3 text-sm text-white/70">No obligation, 30-minute consultation</p>
+            <div class="service-card fade-in">
+                <div class="service-icon"><i class="fas fa-robot"></i></div>
+                <h3>Process Automation</h3>
+                <p>Building intelligent workflow tools and integrations that save time and eliminate manual tasks.</p>
             </div>
+            <div class="service-card fade-in">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>AI ROI Measurement</h3>
+                <p>Providing clear KPIs, before/after analysis, and dashboards to ensure measurable project success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEW PROJECTS SECTION STARTS HERE -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>Featured Projects</h2>
+      <p class="section-subtitle">Real solutions delivering measurable results for businesses across various industries.</p>
+    </div>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-title">ScriptSmith</div>
+          <span class="project-category">Business Automation</span>
+        </div>
+        <div class="project-content">
+          <p class="project-description">AI-powered development automation platform that reduces coding time by 60% through intelligent script generation and optimization.</p>
+          <div class="project-impact">
+            <strong>Client Impact:</strong>
+            <p>Accelerates custom development projects, reducing client costs and delivery timelines significantly.</p>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <div class="metric-value">60%</div>
+              <div class="metric-label">Faster Development</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">4 Weeks</div>
+              <div class="metric-label">Timeline</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">Live</div>
+              <div class="metric-label">Status</div>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">OpenAI API</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-small btn-primary"><i class="fas fa-external-link-alt"></i> View Live</a>
+            <a href="#" class="btn-small btn-outline"><i class="fas fa-info-circle"></i> Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-title">EcommerceNexus</div>
+          <span class="project-category">E-commerce</span>
+        </div>
+        <div class="project-content">
+          <p class="project-description">Enterprise e-commerce solution with inventory sync, multi-channel selling, and advanced analytics dashboard.</p>
+          <div class="project-impact">
+            <strong>Client Impact:</strong>
+            <p>Complete e-commerce infrastructure that scales from startup to enterprise level operations.</p>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <div class="metric-value">250%</div>
+              <div class="metric-label">Sales Increase</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">10 Weeks</div>
+              <div class="metric-label">Timeline</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">Live</div>
+              <div class="metric-label">Status</div>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Stripe</span>
+            <span class="tech-tag">Analytics APIs</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-small btn-primary"><i class="fas fa-external-link-alt"></i> View Live</a>
+            <a href="#" class="btn-small btn-outline"><i class="fas fa-info-circle"></i> Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-title">EstateFlow</div>
+          <span class="project-category">Real Estate</span>
+        </div>
+        <div class="project-content">
+          <p class="project-description">End-to-end estate administration platform handling legal compliance, asset transfers, and workflow automation.</p>
+          <div class="project-impact">
+            <strong>Client Impact:</strong>
+            <p>Streamlines complex legal processes, reduces errors, and saves 40+ hours per estate case.</p>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <div class="metric-value">40+ Hours</div>
+              <div class="metric-label">Time Saved</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">8 Weeks</div>
+              <div class="metric-label">Timeline</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">Private</div>
+              <div class="metric-label">Status</div>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Encryption</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-small btn-outline"><i class="fas fa-info-circle"></i> Case Study</a>
+            <a href="#" class="btn-small btn-outline"><i class="fas fa-envelope"></i> Inquire</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- NEW PROJECTS SECTION ENDS HERE -->
 
-  <!-- Industries Section -->
-  <section id="industries" class="section">
+<section id="contact" class="cta-section">
     <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">Industries</span>
-        <h2 class="section-title">
-          AI Solutions for <span class="highlight">Industry Sectors</span>
-        </h2>
-        <p class="section-description">
-          Customized AI applications for diverse industry sectors based on my experience across multiple domains
-        </p>
-      </div>
-      
-      <div class="industries-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
-        <!-- Manufacturing Industry -->
-        <div class="industry-card apple-card animate-on-scroll" data-animation="slide-up" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
-          <div class="industry-icon" style="font-size: 2.5rem; margin-bottom: 1.25rem; color: #007AFF;">
-            <i class="fas fa-industry"></i>
-          </div>
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Manufacturing</h3>
-          <p style="margin-bottom: 1.5rem; opacity: 0.8;">Enhance production efficiency and quality control through AI-powered process optimization and predictive maintenance.</p>
-          <div style="background: rgba(0,122,255,0.1); padding: 1rem; border-radius: 0.75rem; margin-top: auto;">
-            <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #007AFF;">Key Applications:</h4>
-            <ul style="list-style-type: none; padding: 0;">
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Real-time defect detection</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Production optimization</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Predictive equipment maintenance</li>
-              <li style="display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Supply chain optimization</li>
-            </ul>
-          </div>
+        <div class="cta-content fade-in">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss how custom AI and automation will drive your next wave of results.</p>
+            <div class="cta-buttons">
+                <a href="mailto:your-email@domain.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Get Free Consultation
+                </a>
+            </div>
         </div>
-        
-        <!-- Retail Industry -->
-        <div class="industry-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="200" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
-          <div class="industry-icon" style="font-size: 2.5rem; margin-bottom: 1.25rem; color: #5856D6;">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Retail</h3>
-          <p style="margin-bottom: 1.5rem; opacity: 0.8;">Transform customer experiences and optimize inventory management with AI-powered analytics and personalization.</p>
-          <div style="background: rgba(88,86,214,0.1); padding: 1rem; border-radius: 0.75rem; margin-top: auto;">
-            <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #5856D6;">Key Applications:</h4>
-            <ul style="list-style-type: none; padding: 0;">
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Customer behavior analysis</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Inventory optimization</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Personalized marketing</li>
-              <li style="display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Demand forecasting</li>
-            </ul>
-          </div>
-        </div>
-        
-        <!-- Healthcare Industry -->
-        <div class="industry-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="400" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
-          <div class="industry-icon" style="font-size: 2.5rem; margin-bottom: 1.25rem; color: #FF3B30;">
-            <i class="fas fa-heartbeat"></i>
-          </div>
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Healthcare</h3>
-          <p style="margin-bottom: 1.5rem; opacity: 0.8;">Improve patient care and operational efficiency with HIPAA-compliant AI solutions for clinics and healthcare providers.</p>
-          <div style="background: rgba(255,59,48,0.1); padding: 1rem; border-radius: 0.75rem; margin-top: auto;">
-            <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #FF3B30;">Key Applications:</h4>
-            <ul style="list-style-type: none; padding: 0;">
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Patient records analysis</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Appointment scheduling optimization</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Treatment recommendation systems</li>
-              <li style="display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Administrative workflow automation</li>
-            </ul>
-          </div>
-        </div>
-        
-        <!-- Financial Industry -->
-        <div class="industry-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="600" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
-          <div class="industry-icon" style="font-size: 2.5rem; margin-bottom: 1.25rem; color: #34C759;">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Financial Services</h3>
-          <p style="margin-bottom: 1.5rem; opacity: 0.8;">Enhance decision-making and automate processes with secure AI solutions for financial institutions and services.</p>
-          <div style="background: rgba(52,199,89,0.1); padding: 1rem; border-radius: 0.75rem; margin-top: auto;">
-            <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #34C759;">Key Applications:</h4>
-            <ul style="list-style-type: none; padding: 0;">
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Risk assessment automation</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Fraud detection systems</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Customer service chatbots</li>
-              <li style="display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Document processing automation</li>
-            </ul>
-          </div>
-        </div>
-        
-        <!-- Legal Industry -->
-        <div class="industry-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="800" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
-          <div class="industry-icon" style="font-size: 2.5rem; margin-bottom: 1.25rem; color: #FF9500;">
-            <i class="fas fa-balance-scale"></i>
-          </div>
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Legal</h3>
-          <p style="margin-bottom: 1.5rem; opacity: 0.8;">Streamline document review and case preparation with AI that specializes in legal text analysis and research assistance.</p>
-          <div style="background: rgba(255,149,0,0.1); padding: 1rem; border-radius: 0.75rem; margin-top: auto;">
-            <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #FF9500;">Key Applications:</h4>
-            <ul style="list-style-type: none; padding: 0;">
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Contract analysis & review</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Legal research assistants</li>
-              <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Case outcome prediction</li>
-              <li style="display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Document automation</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="text-center mt-12 animate-on-scroll" data-animation="fade-in">
-        <div class="apple-glass" style="padding: 2rem; border-radius: 1rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); max-width: 800px; margin: 0 auto;">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Ready to transform your business with AI?</h3>
-          <p style="margin-bottom: 1.5rem; opacity: 0.8;">Get a customized AI implementation plan tailored to your industry needs and business goals.</p>
-          <div class="button-container">
-            <a href="#contact" class="apple-button primary">
-              <i class="fas fa-robot mr-2"></i>
-              Request Free AI Consultation
-            </a>
-            <a href="#tampa-sectors" class="apple-button secondary">
-              <i class="fas fa-industry mr-2"></i>
-              View Industry Solutions
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Results Section -->
-  <section id="results" class="section">
+<footer>
     <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">Results</span>
-        <h2 class="section-title">
-          Measurable <span class="highlight">Business Outcomes</span>
-        </h2>
-        <p class="section-description">
-          Real results from AI transformation projects across industries, with proven ROI and business metrics
-        </p>
-      </div>
-      
-      <div class="case-studies-container" style="margin-top: 3rem;">
-        <!-- Case Study 1 -->
-        <div class="case-study apple-card animate-on-scroll" data-animation="slide-up" style="padding: 2rem; margin-bottom: 2rem; display: flex; flex-direction: column; position: relative; overflow: hidden;">
-          <div style="position: absolute; top: 0; right: 0; background: rgba(0,122,255,0.1); color: #007AFF; padding: 0.5rem 1rem; font-weight: 600; border-bottom-left-radius: 0.75rem;">Legal Industry</div>
-          
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; margin-top: 1.5rem;">
-            AI-Powered Document Processing for Tampa Bay Law Firm
-          </h3>
-          
-          <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 1.5rem;">
-            <div style="flex: 1; min-width: 250px;">
-              <p style="margin-bottom: 1rem; opacity: 0.8;">
-                Developed and deployed a custom AI solution for a St. Petersburg law firm, processing 500GB of private data and enabling attorneys to rapidly search, analyze, and summarize case documents while maintaining strict client confidentiality.
-              </p>
-              <div style="margin-top: 1.5rem;">
-                <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: #007AFF;">Solution Components:</h4>
-                <ul style="list-style-type: none; padding: 0;">
-                  <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Custom LLM trained on firm's legal documents</li>
-                  <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Secure cloud infrastructure implementation</li>
-                  <li style="display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Intuitive search and analysis interface</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div style="flex: 1; min-width: 250px;">
-              <div style="background: rgba(0,122,255,0.05); padding: 1.5rem; border-radius: 0.75rem;">
-                <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; color: #007AFF;">Measured Results:</h4>
-                
-                <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
-                  <div style="text-align: center; flex: 1;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #007AFF;">40%</div>
-                    <div style="font-size: 0.9rem; opacity: 0.7;">Reduction in Document Processing Time</div>
-                  </div>
-                  
-                  <div style="text-align: center; flex: 1;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #007AFF;">30%</div>
-                    <div style="font-size: 0.9rem; opacity: 0.7;">Increase in Case Capacity</div>
-                  </div>
-                </div>
-                
-                <div style="text-align: center; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.1);">
-                  <div style="font-size: 1.75rem; font-weight: 700; color: #007AFF;">$250K</div>
-                  <div style="font-size: 0.9rem; opacity: 0.7;">Annual Cost Savings</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Case Study 2 -->
-        <div class="case-study apple-card animate-on-scroll" data-animation="slide-up" style="padding: 2rem; margin-bottom: 2rem; display: flex; flex-direction: column; position: relative; overflow: hidden;">
-          <div style="position: absolute; top: 0; right: 0; background: rgba(52,199,89,0.1); color: #34C759; padding: 0.5rem 1rem; font-weight: 600; border-bottom-left-radius: 0.75rem;">Manufacturing</div>
-          
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; margin-top: 1.5rem;">
-            AI-Driven Infrastructure Modernization
-          </h3>
-          
-          <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 1.5rem;">
-            <div style="flex: 1; min-width: 250px;">
-              <p style="margin-bottom: 1rem; opacity: 0.8;">
-                Led comprehensive infrastructure assessment and cloud migration for a Tampa manufacturing client, implementing real-time data analysis from manufacturing lines.
-              </p>
-              <div style="margin-top: 1.5rem;">
-                <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: #34C759;">Solution Components:</h4>
-                <ul style="list-style-type: none; padding: 0;">
-                  <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Multi-site server infrastructure optimization</li>
-                  <li style="margin-bottom: 0.5rem; display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Cloud-based real-time data analytics</li>
-                  <li style="display: flex; align-items: center;"><i class="fas fa-check" style="color: #00c851; margin-right: 0.5rem;"></i> Integrated access management system</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div style="flex: 1; min-width: 250px;">
-              <div style="background: rgba(52,199,89,0.05); padding: 1.5rem; border-radius: 0.75rem;">
-                <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; color: #34C759;">Measured Results:</h4>
-                
-                <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
-                  <div style="text-align: center; flex: 1;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #34C759;">35%</div>
-                    <div style="font-size: 0.9rem; opacity: 0.7;">Reduction in IT Costs</div>
-                  </div>
-                  
-                  <div style="text-align: center; flex: 1;">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: #34C759;">28%</div>
-                    <div style="font-size: 0.9rem; opacity: 0.7;">Improved Production Efficiency</div>
-                  </div>
-                </div>
-                
-                <div style="text-align: center; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.1);">
-                  <div style="font-size: 1.75rem; font-weight: 700; color: #34C759;">99.9%</div>
-                  <div style="font-size: 0.9rem; opacity: 0.7;">System Uptime</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="text-center mt-12 animate-on-scroll" data-animation="fade-in">
-        <div class="apple-card" style="padding: 2rem; border-radius: 1rem; max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, rgba(9,132,227,0.15), rgba(108,92,231,0.15));">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; background: linear-gradient(90deg, #0984e3, #6c5ce7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Want to see your business in our success stories?</h3>
-          <p style="margin-bottom: 1.5rem; opacity: 0.8; color: #333;">Let's discuss how AI can transform your business operations and deliver measurable ROI</p>
-          <div class="button-container">
-            <a href="#contact" class="apple-button primary">
-              <i class="fas fa-chart-line mr-2"></i>
-              Get Your AI Success Plan
-            </a>
-          </div>
-        </div>
-      </div>
+        <p>&copy; 2025 John Bartlett. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="section">
-    <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">Testimonials</span>
-        <h2 class="section-title">
-          What <span class="highlight">Businesses Say</span>
-        </h2>
-        <p class="section-description">
-          Hear directly from business leaders about their experience working with me on AI transformation projects
-        </p>
-      </div>
-      
-      <div class="testimonials-container" style="margin-top: 3rem;">
-        <div class="testimonial-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card apple-card animate-on-scroll" data-animation="slide-up" style="padding: 2rem; height: 100%; display: flex; flex-direction: column; position: relative;">
-            <div style="font-size: 2.5rem; color: rgba(0,122,255,0.2); position: absolute; top: 1.5rem; right: 1.5rem;">
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <p style="font-style: italic; line-height: 1.6;">
-                "John helped our law firm implement AI document analysis that reduced our research time by 40%. His understanding of both the technical aspects and our unique business needs made the transition seamless."
-              </p>
-            </div>
-            <div style="margin-top: auto; display: flex; align-items: center;">
-              <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #0070C9, #5856D6); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 1rem;">
-                TL
-              </div>
-              <div>
-                <p style="font-weight: 600; margin-bottom: 0.25rem;">Thomas Lawson</p>
-                <p style="font-size: 0.9rem; color: #555;">Managing Partner, Legal Associates LLP</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="200" style="padding: 2rem; height: 100%; display: flex; flex-direction: column; position: relative;">
-            <div style="font-size: 2.5rem; color: rgba(0,122,255,0.2); position: absolute; top: 1.5rem; right: 1.5rem;">
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <p style="font-style: italic; line-height: 1.6;">
-                "As a small retail business owner, I was skeptical about AI. John provided a customized solution that increased our online sales by 35% through better customer targeting and inventory management."
-              </p>
-            </div>
-            <div style="margin-top: auto; display: flex; align-items: center;">
-              <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #34C759, #30B94D); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 1rem;">
-                SR
-              </div>
-              <div>
-                <p style="font-weight: 600; margin-bottom: 0.25rem;">Sarah Rodriguez</p>
-                <p style="font-size: 0.9rem; color: #555;">Owner, Coastal Boutique</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card apple-card animate-on-scroll" data-animation="slide-up" data-delay="400" style="padding: 2rem; height: 100%; display: flex; flex-direction: column; position: relative;">
-            <div style="font-size: 2.5rem; color: rgba(0,122,255,0.2); position: absolute; top: 1.5rem; right: 1.5rem;">
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <p style="font-style: italic; line-height: 1.6;">
-                "John's AI readiness assessment identified several areas where our manufacturing process could benefit from automation. The implemented solutions reduced our operational costs by 28% in just six months."
-              </p>
-            </div>
-            <div style="margin-top: auto; display: flex; align-items: center;">
-              <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #FF9500, #FF8000); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 1rem;">
-                MJ
-              </div>
-              <div>
-                <p style="font-weight: 600; margin-bottom: 0.25rem;">Michael Johnson</p>
-                <p style="font-size: 0.9rem; color: #555;">Operations Director, Advanced Manufacturing Inc.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Testimonials CTA -->
-        <div class="cta-banner mt-12 animate-on-scroll" data-animation="fade-in" style="background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1)); padding: 2rem; border-radius: 1rem; text-align: center;">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #333;">Ready to join these success stories?</h3>
-          <p style="margin-bottom: 1.5rem; color: #444;">Start your AI transformation journey with a free consultation and customized strategy.</p>
-          <a href="#contact" class="apple-button primary">
-            <i class="fas fa-handshake mr-2"></i>
-            Book Your Free AI Consultation
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">About</span>
-        <h2 class="section-title">
-          Your Tampa Bay <span class="highlight">AI Consultant</span>
-        </h2>
-        <p class="section-description">
-          Helping local businesses bridge the gap between advanced AI technology and practical business solutions
-        </p>
-      </div>
-
-      <div class="about-container">
-        <div class="about-image animate-on-scroll" data-animation="slide-in-left">
-          <div class="apple-card p-4">
-            <div class="rounded-2xl w-full h-auto overflow-hidden bg-gradient-to-br py-16 flex justify-center" style="background-image: linear-gradient(to bottom right, #f5f5f7, #e5e5e7);">
-              <svg class="w-40 h-40 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M4.93 19.07A10 10 0 0 1 2 12C2 6.48 6.48 2 12 2c5.52 0 10 4.48 10 10 0 5.52-4.48 10-10 10" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M16.5 14.5c-1.5 2-3.5 3-6.5 3s-5-1-6.5-3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="9" cy="9" r="1" fill="currentColor"/>
-                <circle cx="15" cy="9" r="1" fill="currentColor"/>
-                <path d="M7 4.51C8 4.18 9.5 4 12 4s4 .18 5 .51" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M16 19c1.5-1 2-2 2-2.5 0-3-2.5-4.5-6-4.5s-6 1.5-6 4.5c0 .5.5 1.5 2 2.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              </svg>
-            </div>
-            
-            <div class="flex justify-between mt-4">
-              <div class="apple-icon-container">
-                <i class="fas fa-robot"></i>
-              </div>
-              <div class="apple-icon-container">
-                <i class="fas fa-brain"></i>
-              </div>
-              <div class="apple-icon-container">
-                <i class="fas fa-chart-line"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-content animate-on-scroll" data-animation="slide-in-right">
-          <h3 class="text-2xl font-medium mb-5">
-            AI Transformation for <span class="highlight">Tampa Bay Businesses</span>
-          </h3>
-          
-          <div class="space-y-6">
-            <p class="text-gray-700 leading-relaxed">
-              As a dedicated AI Transformation Consultant based in St. Petersburg, Florida, I specialize in helping small and medium-sized businesses nationwide harness the power of artificial intelligence to drive measurable business outcomes.
-            </p>
-            
-            <p class="text-gray-700 leading-relaxed">
-              My approach combines technical expertise with a deep understanding of business needs, translating complex AI capabilities into practical solutions that reduce costs by up to 30% and improve efficiency by 40%. I've helped over 25 businesses nationwide implement successful AI strategies tailored to their specific industry needs.
-            </p>
-            
-            <div class="mt-6 grid grid-cols-2 gap-4">
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <div class="flex items-center">
-                  <div class="apple-icon-container mr-3">
-                    <i class="fas fa-certificate"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-medium">AI Implementation Specialist</h4>
-                    <p class="text-sm text-gray-600">Certified Expert</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <div class="flex items-center">
-                  <div class="apple-icon-container mr-3">
-                    <i class="fas fa-user-tie"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-medium">Business AI Consultant</h4>
-                    <p class="text-sm text-gray-600">10+ Years Experience</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-            <div class="info-card apple-card">
-              <div class="apple-icon-container">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="info-card-content">
-                <div class="info-card-label">AI Consulting Email</div>
-                <div class="info-card-value">john.bartlett@chrnt.com</div>
-              </div>
-            </div>
-            
-            <div class="info-card apple-card">
-              <div class="apple-icon-container">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="info-card-content">
-                <div class="info-card-label">Business Line</div>
-                <div class="info-card-value">312-792-6860</div>
-              </div>
-            </div>
-            
-            <div class="info-card apple-card">
-              <div class="apple-icon-container">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="info-card-content">
-                <div class="info-card-label">Service Area</div>
-                <div class="info-card-value">Tampa Bay / St. Petersburg, FL</div>
-              </div>
-            </div>
-            
-            <div class="info-card apple-card md:col-span-2">
-              <div class="apple-icon-container" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
-                <i class="fas fa-brain"></i>
-              </div>
-              <div class="info-card-content">
-                <div class="info-card-label">AI Expertise</div>
-                <div class="info-card-value">AI Implementation Strategy, Machine Learning Consulting, Business Process Optimization</div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- CTA Banner -->
-          <div class="cta-banner mt-10 p-6 rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white animate-on-scroll" data-animation="slide-up">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-              <div class="mb-4 md:mb-0">
-                <h3 class="text-xl font-semibold">Ready to transform your Tampa Bay business with AI?</h3>
-                <p class="text-white/80 mt-2">Book a free 30-minute AI strategy session to discuss your specific needs.</p>
-              </div>
-              <a href="#contact" class="apple-button bg-white text-blue-600 hover:bg-gray-100 transition-all">
-                Request Free Consultation
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">Expertise</span>
-        <h2 class="section-title">
-          AI <span class="highlight">Transformation</span> Capabilities
-        </h2>
-        <p class="section-description">
-          Specialized tools and technologies I use to help businesses nationwide implement practical AI solutions with measurable ROI
-        </p>
-      </div>
-
-      <div class="skills-container animate-on-scroll" data-animation="fade-in">
-        <div class="skill-category">
-          <div class="apple-icon-container">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <h3 class="skill-category-title">Business AI Solutions</h3>
-        </div>
-        
-        <div class="skills-grid">
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <h4 class="skill-name">Document Automation</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-comments"></i>
-            </div>
-            <h4 class="skill-name">Customer Service AI</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-search"></i>
-            </div>
-            <h4 class="skill-name">Intelligent Search</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <h4 class="skill-name">Predictive Analytics</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-project-diagram"></i>
-            </div>
-            <h4 class="skill-name">Process Automation</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <h4 class="skill-name">Cloud Optimization</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skills-container animate-on-scroll" data-animation="fade-in">
-        <div class="skill-category">
-          <div class="apple-icon-container">
-            <i class="fas fa-building"></i>
-          </div>
-          <h3 class="skill-category-title">Industry-Specific Solutions</h3>
-        </div>
-        
-        <div class="skills-grid">
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-industry"></i>
-            </div>
-            <h4 class="skill-name">Manufacturing AI</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-balance-scale"></i>
-            </div>
-            <h4 class="skill-name">Legal Document AI</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-heartbeat"></i>
-            </div>
-            <h4 class="skill-name">Healthcare Solutions</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-shopping-cart"></i>
-            </div>
-            <h4 class="skill-name">Retail Analytics</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <h4 class="skill-name">Financial Services</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-bolt"></i>
-            </div>
-            <h4 class="skill-name">Energy Sector</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skills-container animate-on-scroll" data-animation="fade-in">
-        <div class="skill-category">
-          <div class="apple-icon-container">
-            <i class="fas fa-chart-pie"></i>
-          </div>
-          <h3 class="skill-category-title">Business Transformation Leadership</h3>
-        </div>
-        
-        <div class="skills-grid">
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-handshake"></i>
-            </div>
-            <h4 class="skill-name">Strategic Consulting</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-road"></i>
-            </div>
-            <h4 class="skill-name">AI Roadmapping</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </div>
-            <h4 class="skill-name">Executive Training</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-calculator"></i>
-            </div>
-            <h4 class="skill-name">ROI Assessment</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h4 class="skill-name">Change Management</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-          
-          <div class="skill-card apple-card">
-            <div class="skill-icon apple-icon-container">
-              <i class="fas fa-tasks"></i>
-            </div>
-            <h4 class="skill-name">Implementation</h4>
-            <div class="skill-level">
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-              <div class="skill-level-dot skill-level-filled"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Case Studies Section -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">Case Studies</span>
-        <h2 class="section-title">
-          Transformational <span class="highlight">Results</span>
-        </h2>
-        <p class="section-description">
-          Real businesses achieving measurable outcomes through AI transformation consulting.
-        </p>
-      </div>
-
-      <div class="filter-buttons animate-on-scroll" data-animation="fade-in">
-        <div class="filter-container">
-          <button class="filter-button active" data-filter="all">All</button>
-          <button class="filter-button" data-filter="frontend">Business Operations</button>
-          <button class="filter-button" data-filter="fullstack">Customer Experience</button>
-          <button class="filter-button" data-filter="mobile">Revenue Growth</button>
-        </div>
-      </div>
-
-      <div class="projects-grid">
-        <div class="project-card apple-card animate-on-scroll" data-animation="slide-up" data-category="frontend">
-          <div class="project-image">
-            <i class="fas fa-cogs" style="font-size: 3rem; color: #0066CC;"></i>
-            <span class="project-category">Business Operations</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Tampa Manufacturing Firm</h3>
-            <p class="project-description">42% reduction in production planning time through AI-powered predictive maintenance and inventory optimization.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Predictive AI</span>
-              <span class="tech-tag">Process Automation</span>
-              <span class="tech-tag">40% ROI</span>
-            </div>
-            <div class="project-links">
-              <div class="project-icon-links">
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-chart-line"></i>
-                </a>
-              </div>
-              <a href="#" class="project-details-link">
-                Case Study
-                <i class="fas fa-arrow-right ml-1" style="font-size: 0.75rem;"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card apple-card animate-on-scroll" data-animation="slide-up" data-category="fullstack">
-          <div class="project-image">
-            <i class="fas fa-comments" style="font-size: 3rem; color: #0066CC;"></i>
-            <span class="project-category">Customer Experience</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">St. Petersburg Financial Services</h3>
-            <p class="project-description">78% increase in customer satisfaction scores after implementing AI-powered customer service automation with 24/7 support capability.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Conversational AI</span>
-              <span class="tech-tag">Customer Service</span>
-              <span class="tech-tag">65% ROI</span>
-            </div>
-            <div class="project-links">
-              <div class="project-icon-links">
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-chart-line"></i>
-                </a>
-              </div>
-              <a href="#" class="project-details-link">
-                Case Study
-                <i class="fas fa-arrow-right ml-1" style="font-size: 0.75rem;"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card apple-card animate-on-scroll" data-animation="slide-up" data-category="mobile">
-          <div class="project-image">
-            <i class="fas fa-chart-bar" style="font-size: 3rem; color: #0066CC;"></i>
-            <span class="project-category">Revenue Growth</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Tampa Bay Retail Chain</h3>
-            <p class="project-description">53% increase in sales conversions through AI-powered consumer behavior analysis and personalized recommendation engine.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Predictive Analytics</span>
-              <span class="tech-tag">Customer Insights</span>
-              <span class="tech-tag">85% ROI</span>
-            </div>
-            <div class="project-links">
-              <div class="project-icon-links">
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-chart-line"></i>
-                </a>
-              </div>
-              <a href="#" class="project-details-link">
-                Case Study
-                <i class="fas fa-arrow-right ml-1" style="font-size: 0.75rem;"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card apple-card animate-on-scroll" data-animation="slide-up" data-category="fullstack">
-          <div class="project-image">
-            <i class="fas fa-hospital" style="font-size: 3rem; color: #0066CC;"></i>
-            <span class="project-category">Customer Experience</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Tampa Healthcare Provider</h3>
-            <p class="project-description">32% reduction in admin costs by implementing AI document processing for patient records and insurance claims.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Document AI</span>
-              <span class="tech-tag">Process Efficiency</span>
-              <span class="tech-tag">55% ROI</span>
-            </div>
-            <div class="project-links">
-              <div class="project-icon-links">
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-chart-line"></i>
-                </a>
-              </div>
-              <a href="#" class="project-details-link">
-                Case Study
-                <i class="fas fa-arrow-right ml-1" style="font-size: 0.75rem;"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card apple-card animate-on-scroll" data-animation="slide-up" data-category="frontend">
-          <div class="project-image">
-            <i class="fas fa-industry" style="font-size: 3rem; color: #0066CC;"></i>
-            <span class="project-category">Business Operations</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">St. Petersburg Engineering Firm</h3>
-            <p class="project-description">47% improvement in product development cycle through AI-assisted design prototyping and testing simulation.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Generative Design</span>
-              <span class="tech-tag">Digital Twin</span>
-              <span class="tech-tag">60% ROI</span>
-            </div>
-            <div class="project-links">
-              <div class="project-icon-links">
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-chart-line"></i>
-                </a>
-              </div>
-              <a href="#" class="project-details-link">
-                Case Study
-                <i class="fas fa-arrow-right ml-1" style="font-size: 0.75rem;"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card apple-card animate-on-scroll" data-animation="slide-up" data-category="mobile">
-          <div class="project-image">
-            <i class="fas fa-briefcase" style="font-size: 3rem; color: #0066CC;"></i>
-            <span class="project-category">Revenue Growth</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Tampa Law Firm</h3>
-            <p class="project-description">125% increase in client acquisition through AI-powered document analysis and case prediction technology.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Legal AI</span>
-              <span class="tech-tag">Document Analysis</span>
-              <span class="tech-tag">90% ROI</span>
-            </div>
-            <div class="project-links">
-              <div class="project-icon-links">
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-file-alt"></i>
-                </a>
-                <a href="#" class="project-icon-link">
-                  <i class="fas fa-chart-line"></i>
-                </a>
-              </div>
-              <a href="#" class="project-details-link">
-                Case Study
-                <i class="fas fa-arrow-right ml-1" style="font-size: 0.75rem;"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-16 animate-on-scroll" data-animation="fade-in">
-        <a href="#contact" class="apple-button primary">
-          <i class="fas fa-briefcase mr-2"></i>
-          Request a Free AI Consultation
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Industries Section -->
-  <section id="tampa-sectors">
-    <div class="bg-blob blob-1"></div>
-    <div class="bg-blob blob-2"></div>
-    
-    <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill" style="background-color: rgba(255,255,255,0.1); color: white;">Industries</span>
-        <h2 class="section-title" style="color: white;">
-          Tampa Bay <span style="color: #88CCFF;">Business Sectors</span>
-        </h2>
-        <p class="section-description" style="color: rgba(255,255,255,0.7);">
-          Specialized AI transformation solutions for key industries in the Tampa/St. Petersburg region.
-        </p>
-      </div>
-
-      <div class="replit-grid">
-        <!-- Industry 1: Healthcare -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-hospital" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-demos">Healthcare</span>
-            </div>
-            <h3 class="replit-title">Medical & Healthcare</h3>
-            <p class="replit-description">AI solutions for Tampa Bay healthcare providers including patient care optimization, medical document processing, and diagnostic assistance.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Medical Records AI</span>
-              <span class="replit-tech-tag">Patient Care</span>
-              <span class="replit-tech-tag">Administration</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-stethoscope mr-2"></i>
-              Healthcare Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 2: Financial Services -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-chart-line" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-tools">Financial</span>
-            </div>
-            <h3 class="replit-title">Financial Services</h3>
-            <p class="replit-description">AI transformation for Tampa Bay banks, credit unions, and financial advisors improving customer service, risk assessment, and fraud detection.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Risk Analysis</span>
-              <span class="replit-tech-tag">Fraud Detection</span>
-              <span class="replit-tech-tag">Customer Service</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-dollar-sign mr-2"></i>
-              Financial Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 3: Real Estate & Tourism -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-building" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-tools">Real Estate</span>
-            </div>
-            <h3 class="replit-title">Real Estate & Tourism</h3>
-            <p class="replit-description">AI solutions for Tampa/St. Petersburg real estate firms and tourism businesses including market analysis, personalized recommendations, and booking automation.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Market Analysis</span>
-              <span class="replit-tech-tag">Customer Insights</span>
-              <span class="replit-tech-tag">Booking Systems</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-home mr-2"></i>
-              Property & Tourism Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 4: Manufacturing & Logistics -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-industry" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-demos">Manufacturing</span>
-            </div>
-            <h3 class="replit-title">Manufacturing & Logistics</h3>
-            <p class="replit-description">AI-powered solutions for Tampa Bay manufacturers and logistics companies focused on operational efficiency, supply chain optimization, and predictive maintenance.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Process Automation</span>
-              <span class="replit-tech-tag">Predictive Analytics</span>
-              <span class="replit-tech-tag">Supply Chain</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-cogs mr-2"></i>
-              Manufacturing Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 5: Small Business & Retail -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-store" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-tools">Retail</span>
-            </div>
-            <h3 class="replit-title">Small Business & Retail</h3>
-            <p class="replit-description">AI solutions for Tampa Bay small businesses and retailers to compete effectively through personalized marketing, inventory management, and customer experience enhancements.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Customer Analytics</span>
-              <span class="replit-tech-tag">Inventory AI</span>
-              <span class="replit-tech-tag">Marketing</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-shopping-bag mr-2"></i>
-              Small Business Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 6: Education & Non-Profit -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-graduation-cap" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-tools">Education</span>
-            </div>
-            <h3 class="replit-title">Education & Non-Profit</h3>
-            <p class="replit-description">AI transformation for Tampa Bay schools, colleges, and non-profits to enhance learning experiences, improve operational efficiency, and increase fundraising capabilities.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Learning Analytics</span>
-              <span class="replit-tech-tag">Donor Insights</span>
-              <span class="replit-tech-tag">Admin AI</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-hands-helping mr-2"></i>
-              Education Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 7: Hospitality & Food Service -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-utensils" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-tools">Hospitality</span>
-            </div>
-            <h3 class="replit-title">Hospitality & Food Service</h3>
-            <p class="replit-description">AI solutions for Tampa Bay restaurants, hotels, and hospitality businesses to optimize operations, enhance customer experiences, and increase revenue.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Demand Forecasting</span>
-              <span class="replit-tech-tag">Customer Experience</span>
-              <span class="replit-tech-tag">Resource Optimization</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-concierge-bell mr-2"></i>
-              Hospitality Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 8: Professional Services -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-briefcase" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-tools">Services</span>
-            </div>
-            <h3 class="replit-title">Professional Services</h3>
-            <p class="replit-description">AI solutions for Tampa Bay law firms, accounting practices, consulting firms, and other professional services to streamline operations and deliver superior client value.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Document Analysis</span>
-              <span class="replit-tech-tag">Process Automation</span>
-              <span class="replit-tech-tag">Client Insights</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-user-tie mr-2"></i>
-              Professional Solutions
-            </a>
-          </div>
-        </div>
-        
-        <!-- Industry 9: Technology & Startups -->
-        <div class="replit-card animate-on-scroll" data-animation="slide-up" data-category="all">
-          <div class="replit-card-body">
-            <div class="replit-header">
-              <div class="replit-icon">
-                <i class="fas fa-laptop-code" style="color: white; font-size: 1.5rem;"></i>
-              </div>
-              <span class="replit-category category-tools">Technology</span>
-            </div>
-            <h3 class="replit-title">Technology & Startups</h3>
-            <p class="replit-description">AI transformation for Tampa Bay tech companies and startups to accelerate product development, improve operational efficiency, and gain competitive advantage.</p>
-            <div class="replit-tech">
-              <span class="replit-tech-tag">Product Development</span>
-              <span class="replit-tech-tag">Technical Innovation</span>
-              <span class="replit-tech-tag">Scaling Solutions</span>
-            </div>
-            <a href="#contact" class="replit-link">
-              <i class="fas fa-rocket mr-2"></i>
-              Startup Solutions
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-8 animate-on-scroll" data-animation="fade-in">
-        <p style="color: rgba(255,255,255,0.8); margin-bottom: 20px;">Customized AI solutions for every Tampa Bay industry</p>
-      </div>
-
-      <div class="text-center mt-4 animate-on-scroll" data-animation="fade-in">
-        <a href="#contact" class="apple-button primary">
-          <i class="fas fa-envelope mr-2"></i>
-          Schedule Your AI Consultation
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-header animate-on-scroll" data-animation="slide-up">
-        <span class="apple-nav-pill">Business Consultation</span>
-        <h2 class="section-title">
-          Transform Your <span class="highlight">Tampa Bay Business</span>
-        </h2>
-        <p class="section-description">
-          Schedule your free 30-minute AI strategy session to discuss your specific business challenges and discover how custom AI solutions can reduce costs by 30% and improve efficiency by 40% for your company.
-        </p>
-      </div>
-
-      <div class="contact-container">
-        <div class="contact-form animate-on-scroll" data-animation="slide-in-left">
-          <div class="apple-glass" style="padding: 2rem; border-radius: 1.5rem;">
-            <form id="contact-form" action="https://formspree.io/xknaeykp" method="POST">
-              <div class="form-group">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="company" class="form-label">Business Name</label>
-                <input type="text" id="company" name="company" class="form-input" placeholder="Your company or business name">
-              </div>
-              
-              <div class="form-group">
-                <label for="email" class="form-label">Business Email</label>
-                <input type="email" id="email" name="_replyto" class="form-input" placeholder="Your business email address" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="industry" class="form-label">Tampa Bay Industry</label>
-                <select id="industry" name="industry" class="form-input">
-                  <option value="" disabled selected>Select your industry...</option>
-                  <option value="Healthcare">Healthcare & Medical</option>
-                  <option value="Financial">Financial Services</option>
-                  <option value="Retail">Retail & E-commerce</option>
-                  <option value="Hospitality">Hospitality & Tourism</option>
-                  <option value="Real Estate">Real Estate & Property</option>
-                  <option value="Legal">Legal Services</option>
-                  <option value="Manufacturing">Manufacturing</option>
-                  <option value="Tech">Technology & Startups</option>
-                  <option value="Other">Other Industries</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label for="company_size" class="form-label">Business Size</label>
-                <select id="company_size" name="company_size" class="form-input">
-                  <option value="" disabled selected>Select company size...</option>
-                  <option value="1-10">1-10 employees</option>
-                  <option value="11-50">11-50 employees</option>
-                  <option value="51-200">51-200 employees</option>
-                  <option value="200+">200+ employees</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label for="subject" class="form-label">Type of Inquiry</label>
-                <select id="subject" name="subject" class="form-input" required>
-                  <option value="" disabled selected>Select inquiry type...</option>
-                  <option value="Free AI Consultation">Free AI Consultation</option>
-                  <option value="AI Readiness Assessment">AI Readiness Assessment</option>
-                  <option value="Custom AI Project">Custom AI Project</option>
-                  <option value="Speaking Engagement">Speaking Engagement</option>
-                  <option value="Other Inquiry">Other Inquiry</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label for="message" class="form-label">Business Challenge & Goals</label>
-                <textarea id="message" name="message" class="form-textarea" placeholder="Briefly describe your business challenge and what you hope to achieve with AI. Include any specific areas of interest such as customer service automation, data analysis, predictive modeling, etc." rows="5" required></textarea>
-              </div>
-              
-              <input type="hidden" name="_subject" value="AI Consultation Request - Nationwide Business">
-              <input type="text" name="_gotcha" style="display:none">
-              
-              <button type="submit" class="apple-button primary w-100" style="width: 100%; display: flex; align-items: center; justify-content: center;">
-                <i class="fas fa-robot mr-2"></i>
-                Request AI Consultation
-              </button>
-            </form>
-            
-            <div id="form-success" style="display: none; flex-direction: column; align-items: center; text-align: center;">
-              <div style="width: 4rem; height: 4rem; background-color: rgba(0, 200, 81, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                <i class="fas fa-check-circle" style="color: #00c851; font-size: 2rem;"></i>
-              </div>
-              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Thank You!</h3>
-              <p style="color: #666; margin-bottom: 1.5rem;">Your AI consultation request has been received. I'll contact you within 24 hours to schedule a discovery call where we can discuss your business goals and potential AI solutions tailored for your Tampa Bay business.</p>
-              <button onclick="document.getElementById('contact-form').style.display='block'; document.getElementById('form-success').style.display='none';" class="apple-button primary">
-                Send Another Message
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-info animate-on-scroll" data-animation="slide-in-right">
-          <div class="contact-cards">
-            <div class="contact-card apple-glass">
-              <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">AI Consulting Contact</h3>
-              
-              <div class="contact-card-item">
-                <div class="apple-icon-container" style="background: linear-gradient(135deg, #0070c9, #5a51de);">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-card-content">
-                  <div class="contact-card-label">Business Email</div>
-                  <div class="contact-card-value">
-                    <a href="mailto:john.bartlett@chrnt.com">john.bartlett@chrnt.com</a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="contact-card-item">
-                <div class="apple-icon-container" style="background: linear-gradient(135deg, #FF2D55, #FF375F);">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="contact-card-content">
-                  <div class="contact-card-label">Tampa Bay Area</div>
-                  <div class="contact-card-value">St Petersburg, Florida</div>
-                </div>
-              </div>
-              
-              <div class="contact-card-item">
-                <div class="apple-icon-container" style="background: linear-gradient(135deg, #34C759, #30B94D);">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="contact-card-content">
-                  <div class="contact-card-label">Direct Business Line</div>
-                  <div class="contact-card-value">
-                    <a href="tel:+13127926860">(312) 792-6860</a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="contact-card-item">
-                <div class="apple-icon-container" style="background: linear-gradient(135deg, #FF9500, #FF8000);">
-                  <i class="fas fa-clock"></i>
-                </div>
-                <div class="contact-card-content">
-                  <div class="contact-card-label">Response Time</div>
-                  <div class="contact-card-value">Same Business Day</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="contact-card apple-glass">
-              <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">Professional Profiles</h3>
-              
-              <div class="social-connect">
-                <a href="#contact" class="social-card">
-                  <div class="social-card-icon github" style="background: linear-gradient(135deg, #0077d4, #00a2ff);">
-                    <i class="fas fa-robot"></i>
-                  </div>
-                  <div class="social-card-content">
-                    <div class="social-card-label">AI Consultation</div>
-                    <div class="social-card-value">Request Free Assessment</div>
-                  </div>
-                </a>
-                
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-card">
-                  <div class="social-card-icon linkedin">
-                    <i class="fab fa-linkedin-in"></i>
-                  </div>
-                  <div class="social-card-content">
-                    <div class="social-card-label">LinkedIn</div>
-                    <div class="social-card-value">AI Transformation Expert</div>
-                  </div>
-                </a>
-                
-                <a href="tel:+13127926860" class="social-card">
-                  <div class="social-card-icon twitter" style="background: linear-gradient(135deg, #00c851, #007e33);">
-                    <i class="fas fa-phone-alt"></i>
-                  </div>
-                  <div class="social-card-content">
-                    <div class="social-card-label">Direct Line</div>
-                    <div class="social-card-value">(312) 792-6860</div>
-                  </div>
-                </a>
-                
-                <a href="mailto:john.bartlett@chrnt.com" class="social-card">
-                  <div class="social-card-icon dev" style="background: linear-gradient(135deg, #FF8A65, #FF5722);">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div class="social-card-content">
-                    <div class="social-card-label">Email Directly</div>
-                    <div class="social-card-value">john.bartlett@chrnt.com</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-bg"></div>
-    
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="#" class="footer-logo">John F Bartlett <small style="font-size: 0.65em; opacity: 0.8;">AI Consultant</small></a>
-          <p class="footer-description">
-            AI Transformation Consultant for businesses nationwide seeking practical artificial intelligence solutions with measurable ROI.
-          </p>
-          <div class="footer-social">
-            <a href="#contact" aria-label="Free AI Consultation" class="footer-social-link">
-              <i class="fas fa-robot"></i>
-            </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer-social-link">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:john.bartlett@chrnt.com" aria-label="Contact Email" class="footer-social-link">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="tel:+13127926860" aria-label="Contact Phone" class="footer-social-link">
-              <i class="fas fa-phone"></i>
-            </a>
-          </div>
-        </div>
-        
-        <div>
-          <h4 class="footer-heading">AI Solutions</h4>
-          <ul class="footer-links">
-            <li class="footer-link"><a href="#about">About Your AI Consultant</a></li>
-            <li class="footer-link"><a href="#services">AI Business Services</a></li>
-            <li class="footer-link"><a href="#skills">AI Technical Expertise</a></li>
-            <li class="footer-link"><a href="#projects">Case Studies</a></li>
-            <li class="footer-link"><a href="#tampa-sectors">Industry-Specific Solutions</a></li>
-            <li class="footer-link"><a href="#testimonials">Client Testimonials</a></li>
-            <li class="footer-link"><a href="#contact">Free Business Consultation</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="footer-heading">AI Consulting</h4>
-          <ul class="footer-links">
-            <li class="footer-link"><a href="mailto:john.bartlett@chrnt.com"><i class="fas fa-envelope mr-2"></i> john.bartlett@chrnt.com</a></li>
-            <li class="footer-link"><i class="fas fa-map-marker-alt mr-2"></i> St Petersburg, Florida</li>
-            <li class="footer-link"><a href="tel:+13127926860"><i class="fas fa-phone mr-2"></i> (312) 792-6860</a></li>
-            <li class="footer-link"><i class="fas fa-clock mr-2"></i> Same-Day Response for Businesses</li>
-            <li class="footer-link"><i class="fas fa-building mr-2"></i> Serving All Industries Nationwide</li>
-            <li class="footer-link"><i class="fas fa-handshake mr-2"></i> Free 30-Min Strategy Sessions</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="footer-divider"></div>
-      
-      <div class="footer-bottom">
-        <p class="footer-copyright">
-          &copy; <span id="current-year"></span> John Bartlett | AI Transformation Consultant. All rights reserved.
-        </p>
-        <p class="footer-tagline" style="font-size: 0.85rem; margin-top: 0.5rem; color: #777;">
-          Helping businesses nationwide achieve measurable ROI through practical AI implementation
-        </p>
-        
-        <a href="#" class="back-to-top">
-          <i class="fas fa-arrow-up mr-2"></i>
-          Back to top
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
-  
-  <!-- Current year script -->
-  <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
+</footer>
 </body>
 </html>
