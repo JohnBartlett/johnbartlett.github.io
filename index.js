@@ -1,5 +1,10 @@
+// AUTHENTICATION TEMPORARILY DISABLED
+// Authentication logic commented out for easy restoration
+
 // This is an additional security layer for GitHub Pages where .htaccess may not work
 // This script will redirect users to password.html if accessed directly
+
+/* ORIGINAL AUTHENTICATION CODE - COMMENTED OUT FOR RESTORATION:
 (function() {
   // Only run this on the main page, not on the password page
   if (window.location.pathname.endsWith('/index.html') || 
@@ -15,3 +20,7 @@
     }
   }
 })();
+*/
+
+// NO AUTHENTICATION REQUIRED - Direct access allowed
+console.log('Authentication disabled - site accessible without password');
