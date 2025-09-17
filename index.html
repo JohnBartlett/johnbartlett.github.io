@@ -3,22 +3,946 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Bartlett | AI Transformation Consultant | New Design</title>
-    <meta name="description" content="Updated AI Transformation Consultant helping businesses implement practical AI solutions.">
+    <title>John F. Bartlett - AI Strategy & Implementation Consultant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1d1d1f;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: #424245;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007aff;
+        }
+
+        .cta-button {
+            background: #007aff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #0051d5;
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 6vw, 72px);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 24px;
+            color: #424245;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .hero .description {
+            font-size: 20px;
+            color: #6e6e73;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.5;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #007aff;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #6e6e73;
+            margin-top: 4px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #007aff;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: #0051d5;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 122, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #007aff;
+            padding: 16px 32px;
+            border: 2px solid #007aff;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #007aff;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-header h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+
+        .section-header p {
+            font-size: 20px;
+            color: #6e6e73;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: #f5f5f7;
+            border-radius: 24px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: #007aff;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #007aff, #0051d5);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+
+        .service-card p {
+            color: #6e6e73;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .service-features li {
+            color: #424245;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: #30d158;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .service-price {
+            font-size: 20px;
+            font-weight: 600;
+            color: #007aff;
+            margin-bottom: 16px;
+        }
+
+        /* Results Section */
+        .results {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .result-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .result-number {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #30d158;
+        }
+
+        .result-text {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .profile-placeholder {
+            width: 300px;
+            height: 300px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 72px;
+            font-weight: 700;
+            margin: 0 auto;
+        }
+
+        .credentials {
+            margin-top: 30px;
+        }
+
+        .credential-item {
+            background: #f5f5f7;
+            padding: 12px 20px;
+            border-radius: 16px;
+            margin: 8px 0;
+            font-size: 14px;
+            color: #424245;
+            text-align: center;
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #1d1d1f;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            color: #424245;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .experience-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .highlight-item {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        .highlight-item h4 {
+            color: #007aff;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .highlight-item p {
+            font-size: 16px;
+            color: #6e6e73;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: #f5f5f7;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #1d1d1f;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            color: #424245;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .contact-details {
+            list-style: none;
+        }
+
+        .contact-details li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #424245;
+        }
+
+        .contact-details li strong {
+            width: 100px;
+            color: #1d1d1f;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #1d1d1f;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid #d1d1d6;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007aff;
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: #1d1d1f;
+            color: #f5f5f7;
+            padding: 60px 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: #a1a1a6;
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #a1a1a6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #007aff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #424245;
+            padding-top: 20px;
+            text-align: center;
+            color: #a1a1a6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero-stats {
+                gap: 30px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .experience-highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>John Bartlett - AI Consultant</h1>
-        <p>Updated AI consulting services page</p>
-    </header>
-    <main>
-        <section>
-            <h2>AI Consulting Services</h2>
-            <p>Providing cutting-edge AI solutions for modern businesses.</p>
-        </section>
-    </main>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">JF Bartlett</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Business with AI</h1>
+            <p class="subtitle">Strategic AI Implementation That Delivers Real Results</p>
+            <p class="description">
+                20+ years of technology leadership combined with cutting-edge AI expertise. 
+                I help small and medium businesses unlock the power of artificial intelligence 
+                to drive growth, efficiency, and competitive advantage.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$50M+</span>
+                    <span class="stat-label">Projects Managed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">40%</span>
+                    <span class="stat-label">Average Efficiency Gain</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6000+</span>
+                    <span class="stat-label">AI Tool Hours</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Schedule Free Consultation</a>
+                <a href="#services" class="btn-secondary">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Solutions for Your Business</h2>
+                <p>Comprehensive AI consulting services designed to transform your operations and accelerate growth</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3>AI Strategy & Implementation</h3>
+                    <p>Complete AI transformation roadmap from assessment to deployment</p>
+                    <ul class="service-features">
+                        <li>AI readiness assessment</li>
+                        <li>Custom LLM deployment (500GB+ data)</li>
+                        <li>Process automation design</li>
+                        <li>ROI optimization strategy</li>
+                        <li>Cross-functional team leadership</li>
+                    </ul>
+                    <div class="service-price">$8K-15K/month retainer</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Manufacturing AI Optimization</h3>
+                    <p>Industrial AI solutions that deliver measurable efficiency gains</p>
+                    <ul class="service-features">
+                        <li>Real-time data analytics</li>
+                        <li>Predictive maintenance systems</li>
+                        <li>Quality control automation</li>
+                        <li>Supply chain optimization</li>
+                        <li>30%+ efficiency improvements</li>
+                    </ul>
+                    <div class="service-price">$12K-20K/month retainer</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Digital Infrastructure Modernization</h3>
+                    <p>Cloud-first infrastructure designed for AI and scalability</p>
+                    <ul class="service-features">
+                        <li>Multi-cloud strategy (AWS, Azure, Google)</li>
+                        <li>Security & compliance (HIPAA, SOX, PCI)</li>
+                        <li>Infrastructure automation</li>
+                        <li>Disaster recovery planning</li>
+                        <li>35%+ cost reduction</li>
+                    </ul>
+                    <div class="service-price">$5K-12K/month retainer</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>AI Advisory & Training Package</h3>
+                    <p>Ongoing AI guidance plus team empowerment programs</p>
+                    <ul class="service-features">
+                        <li>Monthly AI strategy sessions</li>
+                        <li>Team training on modern AI tools</li>
+                        <li>Workflow optimization consulting</li>
+                        <li>Technology selection guidance</li>
+                        <li>Quarterly capability assessments</li>
+                    </ul>
+                    <div class="service-price">$3K-8K/month retainer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">Proven Results That Matter</h2>
+                <p style="color: rgba(255, 255, 255, 0.9);">Real outcomes from AI implementations across industries</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-number">40%</div>
+                    <div class="result-text">Processing Time Reduction<br>Through AI Automation</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-number">30%</div>
+                    <div class="result-text">Operational Efficiency<br>Improvement</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-number">35%</div>
+                    <div class="result-text">IT Cost Reduction<br>With Performance Gains</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-number">$2.5M</div>
+                    <div class="result-text">Successfully Managed<br>Infrastructure Project</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-placeholder">JFB</div>
+                    <div class="credentials">
+                        <div class="credential-item">🏆 AWS Solutions Architect</div>
+                        <div class="credential-item">🛡️ Google CyberSecurity Analyst</div>
+                        <div class="credential-item">🔬 IEEE | ACM | AAAI Member</div>
+                        <div class="credential-item">🌍 English | Italian | French</div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h2>Meet Your AI Transformation Partner</h2>
+                    <p>
+                        I'm John F. Bartlett, an innovative AI/ML Project Manager with over 20 years of technology 
+                        leadership experience. I specialize in implementing AI solutions that deliver real business value 
+                        for small and medium enterprises.
+                    </p>
+                    <p>
+                        My unique combination of executive-level project management skills and deep technical AI expertise 
+                        allows me to bridge the gap between AI potential and business reality. I've successfully managed 
+                        multi-million dollar digital transformation initiatives while staying at the forefront of AI innovation 
+                        with 6000+ hours of hands-on experience in modern AI environments.
+                    </p>
+
+                    <div class="experience-highlights">
+                        <div class="highlight-item">
+                            <h4>Blue-Chip Experience</h4>
+                            <p>Sun Microsystems, Xerox PARC, ABN AMRO, Magnetar Capital</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>Multi-Industry Expertise</h4>
+                            <p>Manufacturing, Finance, Healthcare, Oil & Gas</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>AI Tool Mastery</h4>
+                            <p>Claude, GPT, Gemini, Perplexity, Replit, Cursor</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>Global Capabilities</h4>
+                            <p>Multi-time zone project management, international experience</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary">Let's Discuss Your AI Strategy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>
+                        Take the first step toward AI transformation. Schedule your free consultation 
+                        to discover how AI can drive growth and efficiency in your business.
+                    </p>
+
+                    <ul class="contact-details">
+                        <li><strong>Email:</strong> AIConsulting@chrnt.com</li>
+                        <li><strong>Phone:</strong> Available upon request</li>
+                        <li><strong>Location:</strong> Saint Petersburg, Florida</li>
+                        <li><strong>LinkedIn:</strong> linkedin.com/in/johnfbartlett</li>
+                    </ul>
+
+                    <p style="margin-top: 30px; font-style: italic; color: #6e6e73;">
+                        Available for projects nationwide and internationally. 
+                        Flexible engagement models from strategic consulting to full implementation.
+                    </p>
+                </div>
+
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xeolwryr" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Primary Interest</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="ai-strategy">AI Strategy & Implementation</option>
+                                <option value="manufacturing">Manufacturing AI Optimization</option>
+                                <option value="infrastructure">Infrastructure Modernization</option>
+                                <option value="training">Team Training & Adoption</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell me about your AI goals</label>
+                            <textarea id="message" name="message" placeholder="Describe your current challenges and AI objectives..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary" style="width: 100%;">Schedule Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 John Bartlett. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JF Bartlett & Associates</h3>
+                    <p>Transforming businesses through strategic AI implementation and digital innovation. 
+                    Serving small and medium enterprises with proven solutions that deliver measurable results.</p>
+                    <p style="margin-top: 20px;">
+                        <strong>Available nationwide and internationally</strong><br>
+                        Saint Petersburg, Florida | AIConsulting@chrnt.com
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#" onclick="scrollToSection('services'); return false;">AI Strategy & Implementation</a></li>
+                        <li><a href="#" onclick="scrollToSection('services'); return false;">Manufacturing AI Optimization</a></li>
+                        <li><a href="#" onclick="scrollToSection('services'); return false;">Infrastructure Modernization</a></li>
+                        <li><a href="#" onclick="scrollToSection('services'); return false;">Team Training & Adoption</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="mailto:AIConsulting@chrnt.com">Email</a></li>
+                        <li><a href="#" onclick="scrollToSection('contact'); return false;">Phone Available Upon Request</a></li>
+                        <li><a href="https://linkedin.com/in/johnfbartlett" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="#" onclick="scrollToSection('contact'); return false;">Schedule Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 JF Bartlett & Associates. All rights reserved. | AI Strategy & Implementation Consulting</p>
+            </div>
+        </div>
     </footer>
-</body>
-</html>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const target = document.getElementById(sectionId);
+            if (target) {
+                const offsetTop = target.offsetTop - 80; // Account for fixed nav
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+            });
+        });
+
+        // Form submission handler - Formspree handles the actual submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            // Let Formspree handle the submission naturally
+            // Show a temporary success message while form submits
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'Sending...';
+            button.disabled = true;
+            
+            // Re-enable button after a delay (in case of errors)
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+            }, 5000);
+        });
+
+        // Add fade-in animation on scroll
+        const
