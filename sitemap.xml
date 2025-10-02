@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://johnbartlett.github.io/</loc>
     <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://johnbartlett.github.io/assets/images/og-image.jpg</image:loc>
+      <image:title>John F. Bartlett - AI Strategy & Implementation Consultant</image:title>
+      <image:caption>Professional AI consulting services for business transformation</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://johnbartlett.github.io/portfolio/</loc>

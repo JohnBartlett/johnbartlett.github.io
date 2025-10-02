@@ -2,6 +2,7 @@
 title: "Project Portfolio"
 permalink: /portfolio/
 layout: page
+description: "Comprehensive GitHub development portfolio showcasing 32 repositories, AI integration projects, and technology stack expertise from 2023-2025"
 ---
 
 # Project Portfolio

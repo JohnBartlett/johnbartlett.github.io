@@ -2,6 +2,7 @@
 title: "Retail AI Solutions"
 permalink: /retail-ai/
 layout: page
+description: "AI-powered retail solutions for customer personalization, demand forecasting, inventory optimization, and dynamic pricing"
 ---
 
 # Retail AI Solutions

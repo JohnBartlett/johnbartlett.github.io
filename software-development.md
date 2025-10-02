@@ -2,6 +2,7 @@
 title: "Software Development"
 permalink: /software-development/
 layout: page
+description: "Expert software development capabilities including AI tools, multiple technology stacks, and modern development practices across 10+ tech stacks"
 ---
 
 # Software Development

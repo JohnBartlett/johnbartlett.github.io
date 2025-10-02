@@ -2,6 +2,7 @@
 title: "Healthcare AI Solutions"
 permalink: /healthcare-ai/
 layout: page
+description: "HIPAA-compliant AI solutions for healthcare including predictive diagnostics, medical imaging analysis, and administrative automation"
 ---
 
 # Healthcare AI Solutions

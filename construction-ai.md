@@ -2,6 +2,7 @@
 title: "Construction AI Solutions"
 permalink: /construction-ai/
 layout: page
+description: "AI solutions for construction including project scheduling, safety monitoring, cost prediction, and resource optimization"
 ---
 
 # Construction AI Solutions
