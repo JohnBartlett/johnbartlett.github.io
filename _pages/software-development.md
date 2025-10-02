@@ -33,13 +33,13 @@ This section provides a complete overview of John Bartlett's software developmen
 
 ## Comprehensive AI & Multi-Stack Expertise
 
-### **🤖 Advanced AI Tool Mastery**
+### **Advanced AI Tool Mastery**
 - **Multiple LLMs**: ChatGPT, Claude, Perplexity AI, and specialized AI agents
 - **AI Development Environments**: Cursor, Replit AI, Comet ML integration
 - **Multi-Agent Workflows**: Orchestrating multiple AI agents for complex development tasks
 - **Prompt Engineering**: Advanced techniques for effective AI tool utilization
 
-### **🛠️ Extensive Technology Stack Experience**
+### **Extensive Technology Stack Experience**
 - **Frontend**: React, Vue.js, Angular, Svelte, TypeScript, modern JavaScript
 - **Backend**: Node.js, Python (Django/Flask), Java (Spring), C# (.NET), Go
 - **Databases**: SQL (PostgreSQL, MySQL, SQL Server) and NoSQL (MongoDB, Redis, DynamoDB)
@@ -49,7 +49,7 @@ This section provides a complete overview of John Bartlett's software developmen
 
 ## Development Sections
 
-### **📊 [Development Portfolio](/development-portfolio/)**
+### **[Development Portfolio](/development-portfolio/)**
 Comprehensive analysis of GitHub projects, repository statistics, and strategic recommendations for portfolio optimization.
 
 **Key Features:**
@@ -58,7 +58,7 @@ Comprehensive analysis of GitHub projects, repository statistics, and strategic 
 - Generated reports and analysis artifacts
 - Strategic recommendations for portfolio improvement
 
-### **🛠️ [Technology Stacks](/technology-stacks/)**
+### **[Technology Stacks](/technology-stacks/)**
 Detailed expertise across multiple technology stacks and development environments.
 
 **Core Technologies:**
@@ -67,7 +67,7 @@ Detailed expertise across multiple technology stacks and development environment
 - DevOps & Infrastructure (Docker, cloud platforms)
 - Mobile Development (iOS, cross-platform)
 
-### **⚙️ [Development Tools](/development-tools/)**
+### **[Development Tools](/development-tools/)**
 Modern development workflows, AI-enhanced coding, and collaborative development environments.
 
 **Development Environments:**

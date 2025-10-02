@@ -8,25 +8,25 @@ layout: page
 
 ## Core Development Stacks
 
-### **🌐 Web Development**
+### **Web Development**
 - **Frontend**: React, TypeScript, modern JavaScript frameworks
 - **Backend**: Node.js, Express, API development
 - **Full-Stack**: End-to-end web application development
 - **Modern Tools**: Build systems, testing frameworks, CI/CD
 
-### **🐍 Python & Data Science**
+### **Python & Data Science**
 - **Data Analysis**: Pandas, NumPy, data processing pipelines
 - **Machine Learning**: Scikit-learn, TensorFlow, model development
 - **Automation**: Scripts for workflow optimization
 - **AI Integration**: ChatGPT, AI tool integration projects
 
-### **🐳 DevOps & Infrastructure**
+### **DevOps & Infrastructure**
 - **Containerization**: Docker, Kubernetes orchestration
 - **Cloud Platforms**: AWS, Azure, Google Cloud deployments
 - **Infrastructure as Code**: Terraform, automated provisioning
 - **CI/CD**: GitHub Actions, automated testing and deployment
 
-### **📱 Mobile Development**
+### **Mobile Development**
 - **iOS Native**: Swift, Xcode, iOS application development
 - **Cross-Platform**: React Native, hybrid mobile solutions
 - **User Experience**: Mobile-first design and optimization
@@ -34,19 +34,19 @@ layout: page
 
 ## Development Environments
 
-### **🤖 AI-Assisted Development**
+### **AI-Assisted Development**
 - **Cursor**: AI-powered coding assistance and code generation
 - **Modern Workflows**: Prompt-driven development practices
 - **Productivity Enhancement**: Automated code completion and optimization
 - **Next-Gen Tools**: Cutting-edge development environment integration
 
-### **☁️ Cloud Development**
+### **Cloud Development**
 - **Replit**: Browser-based collaborative coding environment
 - **Real-time Collaboration**: Shared development workspaces
 - **Rapid Prototyping**: Quick iteration and testing capabilities
 - **Educational Focus**: Learning and demonstration projects
 
-### **🔬 Machine Learning Platform**
+### **Machine Learning Platform**
 - **Comet ML**: Experiment tracking and model management
 - **ML Collaboration**: Team-based machine learning development
 - **Model Deployment**: Production-ready ML solution deployment
