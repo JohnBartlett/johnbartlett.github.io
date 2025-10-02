@@ -4,11 +4,11 @@ permalink: /software-development/
 layout: page
 ---
 
-# Software Development Portfolio
+# Software Development
 
-## Overview
+## Comprehensive Development Expertise
 
-This comprehensive analysis documents John Bartlett's GitHub development portfolio, featuring 32 repositories analyzed from 2023–2025. The analysis covers project purposes, technology stacks, development activity, and strategic recommendations for continued growth.
+This section provides a complete overview of John Bartlett's software development capabilities, featuring comprehensive analysis of 32 GitHub repositories, technology stack expertise, and modern development practices.
 
 ## Quick Stats
 
@@ -18,18 +18,63 @@ This comprehensive analysis documents John Bartlett's GitHub development portfol
         <div class="stat-label">Total Repositories</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">4</div>
-        <div class="stat-label">Primary Tech Stacks</div>
+        <div class="stat-number">7+</div>
+        <div class="stat-label">AI Tools & Agents</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Development Environments</div>
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Tech Stacks</div>
     </div>
     <div class="stat-card">
         <div class="stat-number">2023-2025</div>
         <div class="stat-label">Analysis Period</div>
     </div>
 </div>
+
+## Comprehensive AI & Multi-Stack Expertise
+
+### **🤖 Advanced AI Tool Mastery**
+- **Multiple LLMs**: ChatGPT, Claude, Perplexity AI, and specialized AI agents
+- **AI Development Environments**: Cursor, Replit AI, Comet ML integration
+- **Multi-Agent Workflows**: Orchestrating multiple AI agents for complex development tasks
+- **Prompt Engineering**: Advanced techniques for effective AI tool utilization
+
+### **🛠️ Extensive Technology Stack Experience**
+- **Frontend**: React, Vue.js, Angular, Svelte, TypeScript, modern JavaScript
+- **Backend**: Node.js, Python (Django/Flask), Java (Spring), C# (.NET), Go
+- **Databases**: SQL (PostgreSQL, MySQL, SQL Server) and NoSQL (MongoDB, Redis, DynamoDB)
+- **Cloud Platforms**: AWS, Azure, Google Cloud with specialized services
+- **Mobile**: iOS (Swift), Android (Kotlin/Java), React Native, Flutter
+- **DevOps**: Docker, Kubernetes, Terraform, CI/CD pipelines, monitoring
+
+## Development Sections
+
+### **📊 [Development Portfolio](/development-portfolio/)**
+Comprehensive analysis of GitHub projects, repository statistics, and strategic recommendations for portfolio optimization.
+
+**Key Features:**
+- 32 repository analysis with activity metrics
+- Project categorization (active, maintained, experimental, archived)
+- Generated reports and analysis artifacts
+- Strategic recommendations for portfolio improvement
+
+### **🛠️ [Technology Stacks](/technology-stacks/)**
+Detailed expertise across multiple technology stacks and development environments.
+
+**Core Technologies:**
+- Web Development (React, TypeScript, Node.js)
+- Python & Data Science (ML, automation, AI integration)
+- DevOps & Infrastructure (Docker, cloud platforms)
+- Mobile Development (iOS, cross-platform)
+
+### **⚙️ [Development Tools](/development-tools/)**
+Modern development workflows, AI-enhanced coding, and collaborative development environments.
+
+**Development Environments:**
+- AI-Assisted Development (Cursor, ChatGPT integration)
+- Cloud Development (Replit, collaborative coding)
+- Machine Learning Platform (Comet ML, experiment tracking)
+- Modern Workflows (automation, quality assurance)
 
 ## Technology Expertise
 
