@@ -155,35 +155,64 @@ description: "Professional software development expertise with AI integration, m
     </div>
 </div>
 
-<div class="tech-stacks">
-    <div class="tech-category">
-        <h4>🗄️ AI Vector Databases</h4>
-        <div class="tech-tags">
-            <span class="tech-tag">Pinecone</span>
-            <span class="tech-tag">Weaviate</span>
-            <span class="tech-tag">Chroma</span>
-            <span class="tech-tag">Qdrant</span>
+<div class="tech-stacks-grid">
+    <div class="tech-stack-card">
+        <div class="tech-stack-icon">🗄️</div>
+        <h3>AI Vector Databases</h3>
+        <p>Advanced vector storage and similarity search for AI applications</p>
+        <div class="tech-list">
+            <div class="tech-item">
+                <strong>Pinecone</strong> - Scalable vector database for AI applications
+            </div>
+            <div class="tech-item">
+                <strong>Weaviate</strong> - Open-source vector database with GraphQL API
+            </div>
+            <div class="tech-item">
+                <strong>Chroma</strong> - Open-source embedding database for AI applications
+            </div>
+            <div class="tech-item">
+                <strong>Qdrant</strong> - High-performance vector similarity search
+            </div>
         </div>
     </div>
 
-    <div class="tech-category">
-        <h4>💻 Operating Systems</h4>
-        <div class="tech-tags">
-            <span class="tech-tag">Windows</span>
-            <span class="tech-tag">macOS</span>
-            <span class="tech-tag">Linux</span>
-            <span class="tech-tag">iOS</span>
-            <span class="tech-tag">Android</span>
+    <div class="tech-stack-card">
+        <div class="tech-stack-icon">💻</div>
+        <h3>Operating Systems</h3>
+        <p>Cross-platform development across all major operating systems</p>
+        <div class="tech-list">
+            <div class="tech-item">
+                <strong>Desktop</strong> - Windows, macOS, Linux (Ubuntu, CentOS, Debian)
+            </div>
+            <div class="tech-item">
+                <strong>Mobile</strong> - iOS, Android, iPadOS
+            </div>
+            <div class="tech-item">
+                <strong>Cross-Platform</strong> - React Native, Flutter, Electron
+            </div>
+            <div class="tech-item">
+                <strong>Cloud Platforms</strong> - AWS, Azure, Google Cloud
+            </div>
         </div>
     </div>
 
-    <div class="tech-category">
-        <h4>🔧 Development Tools</h4>
-        <div class="tech-tags">
-            <span class="tech-tag">VS Code</span>
-            <span class="tech-tag">Xcode</span>
-            <span class="tech-tag">Android Studio</span>
-            <span class="tech-tag">Cursor</span>
+    <div class="tech-stack-card">
+        <div class="tech-stack-icon">🔧</div>
+        <h3>Development Tools</h3>
+        <p>Professional development environments and integrated tools</p>
+        <div class="tech-list">
+            <div class="tech-item">
+                <strong>VS Code</strong> - Multi-language development environment
+            </div>
+            <div class="tech-item">
+                <strong>Xcode</strong> - iOS and macOS application development
+            </div>
+            <div class="tech-item">
+                <strong>Android Studio</strong> - Android application development
+            </div>
+            <div class="tech-item">
+                <strong>Cursor</strong> - AI-powered coding assistance
+            </div>
         </div>
     </div>
 </div>
