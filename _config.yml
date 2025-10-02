@@ -1,0 +1,42 @@
+title: "John F. Bartlett - AI Strategy & Implementation Consultant"
+description: "Strategic AI Implementation That Delivers Real Results"
+baseurl: ""
+url: "https://johnbartlett.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Navigation
+navigation:
+  - title: "Services"
+    url: "#services"
+  - title: "Results"
+    url: "#results"
+  - title: "About"
+    url: "#about"
+  - title: "Contact"
+    url: "#contact"
+  - title: "Portfolio Analysis"
+    url: "/portfolio-analysis/"
+
