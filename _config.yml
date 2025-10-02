@@ -40,3 +40,6 @@ navigation:
   - title: "Portfolio Analysis"
     url: "/portfolio-analysis/"
 
+# Site version
+version: 3.2.18
+
