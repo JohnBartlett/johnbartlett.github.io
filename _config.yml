@@ -8,12 +8,6 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
-# Collections
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-
 # Defaults
 defaults:
   - scope:
@@ -43,5 +37,5 @@ navigation:
     url: "/software-development/"
 
 # Site version
-version: 3.2.28
+version: 3.2.29
 
