@@ -1,4 +1,4 @@
-title: "John F. Bartlett - AI Strategy & Implementation Consultant"
+  title: "John F. Bartlett - AI Strategy & Implementation Consultant"
 description: "Strategic AI Implementation That Delivers Real Results"
 baseurl: ""
 url: "https://johnbartlett.github.io"
@@ -43,5 +43,5 @@ navigation:
     url: "/software-development/"
 
 # Site version
-version: 3.2.26
+version: 3.2.27
 
