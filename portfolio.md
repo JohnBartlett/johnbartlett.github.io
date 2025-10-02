@@ -153,4 +153,4 @@ This page showcases John Bartlett's complete development portfolio, featuring de
 
 ---
 
-*This portfolio analysis provides a comprehensive view of development capabilities, offering strategic insights for continued growth and professional development in software engineering and AI implementation.*
+*Comprehensive development portfolio showcasing expertise across multiple technology stacks and AI integration.*
