@@ -29,15 +29,13 @@ navigation:
     url: "#results"
   - title: "Industries"
     url: "#industries"
-  - title: "Portfolio"
-    url: "/portfolio/"
+  - title: "Development Expertise"
+    url: "/development-expertise/"
   - title: "About"
     url: "#about"
   - title: "Contact"
     url: "#contact"
-  - title: "Software Development"
-    url: "/software-development/"
 
 # Site version
-version: 3.2.39
+version: 3.2.40
 
