@@ -129,6 +129,30 @@ description: "Professional software development expertise with AI integration, m
             <li><strong>Railway</strong>: Modern cloud platform</li>
         </ul>
     </div>
+
+    <div class="environment-card">
+        <div class="env-icon">🔧</div>
+        <h3>DevOps & Automation</h3>
+        <p>Infrastructure as code and automated deployment pipelines</p>
+        <ul>
+            <li><strong>Docker</strong>: Containerization and orchestration</li>
+            <li><strong>Kubernetes</strong>: Container orchestration platform</li>
+            <li><strong>Terraform</strong>: Infrastructure as code</li>
+            <li><strong>CI/CD</strong>: Automated testing and deployment</li>
+        </ul>
+    </div>
+
+    <div class="environment-card">
+        <div class="env-icon">📱</div>
+        <h3>Mobile Development</h3>
+        <p>Cross-platform and native mobile application development</p>
+        <ul>
+            <li><strong>iOS Development</strong>: Swift and Xcode</li>
+            <li><strong>Android Development</strong>: Kotlin and Java</li>
+            <li><strong>React Native</strong>: Cross-platform mobile apps</li>
+            <li><strong>Flutter</strong>: Multi-platform development</li>
+        </ul>
+    </div>
 </div>
 
 <div class="tech-stacks">
