@@ -7,29 +7,6 @@ description: "Comprehensive software development portfolio and expertise showcas
 
 # Development Expertise
 
-## Comprehensive Software Development Portfolio
-
-## Quick Stats
-
-<div class="stats-grid">
-    <div class="stat-card">
-        <div class="stat-number">32</div>
-        <div class="stat-label">Total Repositories</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-number">10+</div>
-        <div class="stat-label">AI Tools & Agents</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-number">10+</div>
-        <div class="stat-label">Tech Stacks</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-number">2023-2025</div>
-        <div class="stat-label">Analysis Period</div>
-    </div>
-</div>
-
 ## AI & Multi-Stack Expertise
 
 ### **Advanced AI Tool Mastery**
