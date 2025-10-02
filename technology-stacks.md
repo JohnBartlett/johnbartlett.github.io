@@ -52,6 +52,14 @@ layout: page
 - **Model Deployment**: Production-ready ML solution deployment
 - **Research Projects**: Academic and commercial ML applications
 
+### **AI Vector Databases**
+- **Pinecone**: Scalable vector database for AI applications
+- **Weaviate**: Open-source vector database with GraphQL API
+- **Chroma**: Open-source embedding database for AI applications
+- **Qdrant**: High-performance vector database for similarity search
+- **Vector Search**: Semantic search and similarity matching
+- **Embedding Storage**: Efficient storage and retrieval of AI embeddings
+
 ## Technology Adoption Patterns
 
 ### **Multi-Stack Expertise**
@@ -63,7 +71,7 @@ layout: page
 ### **Advanced Technology Stack Experience**
 - **Frontend Technologies**: React, Vue.js, Angular, Svelte, and modern JavaScript frameworks
 - **Backend Technologies**: Node.js, Python (Django/Flask), Java (Spring), C# (.NET), Go
-- **Database Systems**: SQL (PostgreSQL, MySQL, SQL Server) and NoSQL (MongoDB, Redis, DynamoDB)
+- **Database Systems**: SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB, Redis, DynamoDB), and AI Vector Databases (Pinecone, Weaviate, Chroma, Qdrant)
 - **Cloud Platforms**: AWS, Azure, Google Cloud with specialized services and architectures
 - **Mobile Development**: iOS (Swift), Android (Kotlin/Java), React Native, Flutter
 - **DevOps & Infrastructure**: Docker, Kubernetes, Terraform, CI/CD pipelines, monitoring

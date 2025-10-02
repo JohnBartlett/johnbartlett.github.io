@@ -42,7 +42,7 @@ This section provides a complete overview of John Bartlett's software developmen
 ### **Extensive Technology Stack Experience**
 - **Frontend**: React, Vue.js, Angular, Svelte, TypeScript, modern JavaScript
 - **Backend**: Node.js, Python (Django/Flask), Java (Spring), C# (.NET), Go
-- **Databases**: SQL (PostgreSQL, MySQL, SQL Server) and NoSQL (MongoDB, Redis, DynamoDB)
+- **Databases**: SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB, Redis, DynamoDB), and AI Vector Databases (Pinecone, Weaviate, Chroma, Qdrant)
 - **Cloud Platforms**: AWS, Azure, Google Cloud with specialized services
 - **Mobile**: iOS (Swift), Android (Kotlin/Java), React Native, Flutter
 - **DevOps**: Docker, Kubernetes, Terraform, CI/CD pipelines, monitoring

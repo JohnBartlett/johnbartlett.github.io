@@ -54,6 +54,14 @@ layout: page
 - **DeepSeek**: Advanced reasoning and complex task processing
 - **Llama (Meta)**: Open-source LLM for research and development
 
+### **AI Database Technologies**
+- **Pinecone**: Vector database for AI applications and semantic search
+- **Weaviate**: Open-source vector database with GraphQL API
+- **Chroma**: Embedding database for AI applications
+- **Qdrant**: High-performance vector similarity search
+- **Vector Search**: Semantic search and similarity matching capabilities
+- **Embedding Storage**: Efficient AI embedding storage and retrieval
+
 ### **Multi-Agent Development Workflows**
 - **Agent Orchestration**: Coordinating multiple AI agents for complex tasks
 - **Specialized Agents**: Task-specific AI agents for different development phases
