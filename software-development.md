@@ -18,7 +18,7 @@ This section provides a complete overview of John Bartlett's software developmen
         <div class="stat-label">Total Repositories</div>
     </div>
     <div class="stat-card">
-        <div class="stat-number">7+</div>
+        <div class="stat-number">10+</div>
         <div class="stat-label">AI Tools & Agents</div>
     </div>
     <div class="stat-card">
@@ -34,7 +34,7 @@ This section provides a complete overview of John Bartlett's software developmen
 ## Comprehensive AI & Multi-Stack Expertise
 
 ### **Advanced AI Tool Mastery**
-- **Multiple LLMs**: ChatGPT, Claude, Perplexity AI, and specialized AI agents
+- **Multiple LLMs**: ChatGPT, Claude, Gemini, Perplexity AI, DeepSeek, Llama, and specialized AI agents
 - **AI Development Environments**: Cursor, Replit AI, Comet ML integration
 - **Multi-Agent Workflows**: Orchestrating multiple AI agents for complex development tasks
 - **Prompt Engineering**: Advanced techniques for effective AI tool utilization

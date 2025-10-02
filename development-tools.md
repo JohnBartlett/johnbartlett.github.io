@@ -47,9 +47,12 @@ layout: page
 - **GitHub Copilot**: AI-powered coding assistance and completion
 - **ChatGPT Integration**: Prompt-driven development workflows
 - **Claude (Anthropic)**: Advanced reasoning and code analysis
+- **Gemini (Google)**: Multimodal AI for code and content generation
 - **Perplexity AI**: Research and information gathering
 - **Replit AI**: Cloud-based AI coding assistance
 - **Comet ML**: Machine learning experiment tracking and AI model management
+- **DeepSeek**: Advanced reasoning and complex task processing
+- **Llama (Meta)**: Open-source LLM for research and development
 
 ### **Multi-Agent Development Workflows**
 - **Agent Orchestration**: Coordinating multiple AI agents for complex tasks
