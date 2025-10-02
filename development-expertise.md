@@ -9,8 +9,6 @@ description: "Comprehensive software development portfolio and expertise showcas
 
 ## Comprehensive Software Development Portfolio
 
-This section showcases John Bartlett's complete development capabilities, featuring detailed analysis of 32 GitHub repositories, technology stack expertise, and modern development practices spanning 2023–2025.
-
 ## Quick Stats
 
 <div class="stats-grid">
@@ -45,6 +43,7 @@ This section showcases John Bartlett's complete development capabilities, featur
 - **Backend**: Node.js, Python (Django/Flask), Java (Spring), C# (.NET), Go
 - **Databases**: SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB, Redis, DynamoDB), and AI Vector Databases (Pinecone, Weaviate, Chroma, Qdrant)
 - **Cloud Platforms**: AWS, Azure, Google Cloud with specialized services
+- **Deployment Infrastructure**: Vercel, Netlify, Heroku, Railway, DigitalOcean
 - **Mobile**: iOS (Swift), Android (Kotlin/Java), React Native, Flutter
 - **Operating Systems**: Windows, macOS, Linux, iPadOS, iOS, Android
 - **DevOps**: Docker, Kubernetes, Terraform, CI/CD pipelines, monitoring
@@ -83,6 +82,13 @@ This section showcases John Bartlett's complete development capabilities, featur
 - **ML Collaboration**: Team-based machine learning development
 - **Model Deployment**: Production-ready ML solution deployment
 - **Research Projects**: Academic and commercial ML applications
+
+### **Deployment & Infrastructure**
+- **Vercel**: Frontend and full-stack application deployment
+- **Netlify**: Static site hosting and serverless functions
+- **Heroku**: Container-based application deployment
+- **Railway**: Modern cloud platform for applications
+- **DigitalOcean**: Cloud infrastructure and managed services
 
 ### **AI Vector Databases**
 - **Pinecone**: Scalable vector database for AI applications
