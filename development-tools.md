@@ -62,6 +62,14 @@ layout: page
 - **Vector Search**: Semantic search and similarity matching capabilities
 - **Embedding Storage**: Efficient AI embedding storage and retrieval
 
+### **Operating Systems & Development Platforms**
+- **Desktop OS**: Windows, macOS, Linux (Ubuntu, CentOS, Debian)
+- **Mobile OS**: iOS, Android, iPadOS
+- **Cross-Platform Development**: React Native, Flutter, Electron
+- **Development Environments**: VS Code, Xcode, Android Studio, Cursor
+- **Cloud Development**: AWS, Azure, Google Cloud platforms
+- **Containerization**: Docker, Kubernetes across all operating systems
+
 ### **Multi-Agent Development Workflows**
 - **Agent Orchestration**: Coordinating multiple AI agents for complex tasks
 - **Specialized Agents**: Task-specific AI agents for different development phases

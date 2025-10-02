@@ -60,6 +60,14 @@ layout: page
 - **Vector Search**: Semantic search and similarity matching
 - **Embedding Storage**: Efficient storage and retrieval of AI embeddings
 
+### **Operating Systems & Platforms**
+- **Desktop**: Windows, macOS, Linux (Ubuntu, CentOS, Debian)
+- **Mobile**: iOS, Android, iPadOS
+- **Cross-Platform**: React Native, Flutter, Electron
+- **Cloud Platforms**: AWS, Azure, Google Cloud
+- **Containerization**: Docker, Kubernetes across all platforms
+- **Development Environments**: VS Code, Xcode, Android Studio, Cursor
+
 ## Technology Adoption Patterns
 
 ### **Multi-Stack Expertise**
@@ -74,6 +82,7 @@ layout: page
 - **Database Systems**: SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB, Redis, DynamoDB), and AI Vector Databases (Pinecone, Weaviate, Chroma, Qdrant)
 - **Cloud Platforms**: AWS, Azure, Google Cloud with specialized services and architectures
 - **Mobile Development**: iOS (Swift), Android (Kotlin/Java), React Native, Flutter
+- **Operating Systems**: Windows, macOS, Linux, iPadOS, iOS, Android
 - **DevOps & Infrastructure**: Docker, Kubernetes, Terraform, CI/CD pipelines, monitoring
 
 ### **Legacy Technology Management**
