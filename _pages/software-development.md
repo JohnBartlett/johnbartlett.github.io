@@ -6,145 +6,150 @@ layout: page
 
 # Software Development Portfolio
 
-## Comprehensive GitHub Project Analysis
+## Overview
 
-This page documents the complete mapping and analysis of John Bartlett's GitHub development portfolio, covering 32 repositories analyzed from 2023–2025. The analysis provides insights into project purposes, technology stacks, development activity, and strategic recommendations.
+This comprehensive analysis documents John Bartlett's GitHub development portfolio, featuring 32 repositories analyzed from 2023–2025. The analysis covers project purposes, technology stacks, development activity, and strategic recommendations for continued growth.
 
-## Portfolio Overview
+## Quick Stats
 
-### **Project Statistics**
-- **Total Repositories**: 32 active projects
-- **Analysis Period**: 2023–2025
-- **Technology Stacks**: Node.js/React/TypeScript, Python, Docker, iOS
-- **Development Environments**: Cursor, Replit, Comet integration
-- **Activity Level**: Mix of active, maintained, and experimental projects
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-number">32</div>
+        <div class="stat-label">Total Repositories</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Primary Tech Stacks</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Development Environments</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">2023-2025</div>
+        <div class="stat-label">Analysis Period</div>
+    </div>
+</div>
 
-### **Key Findings**
-- **Most Active Stack**: Node.js/React/TypeScript (web development focus)
-- **Data Science Projects**: Python-based automation and analysis tools
-- **Infrastructure**: Docker containerization and deployment solutions
-- **Experimental**: iOS development and mobile applications
-- **Development Tools**: Integration with modern AI-assisted coding environments
+## Technology Expertise
 
-## Technology Stack Analysis
+### **Core Development Stacks**
 
-### **Primary Technologies**
+#### **🌐 Web Development**
+- **Frontend**: React, TypeScript, modern JavaScript frameworks
+- **Backend**: Node.js, Express, API development
+- **Full-Stack**: End-to-end web application development
+- **Modern Tools**: Build systems, testing frameworks, CI/CD
 
-#### **Node.js / React / TypeScript Ecosystem**
-- **Web Applications**: Full-stack development projects
-- **Frontend Frameworks**: React with TypeScript for type safety
-- **Backend Services**: Node.js APIs and microservices
-- **Development Tools**: Modern build systems and testing frameworks
-
-#### **Python Development**
-- **Data Science**: Machine learning and data analysis projects
+#### **🐍 Python & Data Science**
+- **Data Analysis**: Pandas, NumPy, data processing pipelines
+- **Machine Learning**: Scikit-learn, TensorFlow, model development
 - **Automation**: Scripts for workflow optimization
-- **AI Integration**: ChatGPT and AI tool integration projects
-- **Analytics**: Data processing and visualization tools
+- **AI Integration**: ChatGPT, AI tool integration projects
 
-#### **Docker & Infrastructure**
-- **Containerization**: Application deployment solutions
-- **DevOps**: Infrastructure as code projects
-- **Microservices**: Scalable architecture implementations
-- **Cloud Integration**: AWS, Azure, and Google Cloud deployments
+#### **🐳 DevOps & Infrastructure**
+- **Containerization**: Docker, Kubernetes orchestration
+- **Cloud Platforms**: AWS, Azure, Google Cloud deployments
+- **Infrastructure as Code**: Terraform, automated provisioning
+- **CI/CD**: GitHub Actions, automated testing and deployment
 
-#### **iOS & Mobile Development**
-- **Mobile Applications**: iOS native development
-- **Cross-Platform**: React Native and hybrid solutions
-- **User Experience**: Mobile-first design implementations
+#### **📱 Mobile Development**
+- **iOS Native**: Swift, Xcode, iOS application development
+- **Cross-Platform**: React Native, hybrid mobile solutions
+- **User Experience**: Mobile-first design and optimization
 - **App Store**: Published applications and prototypes
 
-### **Development Environment Integration**
+### **Development Environments**
 
-#### **Cursor Integration**
-- **AI-Assisted Coding**: Projects developed with Cursor AI
-- **Code Generation**: Prompt-driven development workflows
-- **Productivity Tools**: Enhanced development efficiency
-- **Modern Workflows**: Next-generation coding practices
+#### **🤖 AI-Assisted Development**
+- **Cursor**: AI-powered coding assistance and code generation
+- **Modern Workflows**: Prompt-driven development practices
+- **Productivity Enhancement**: Automated code completion and optimization
+- **Next-Gen Tools**: Cutting-edge development environment integration
 
-#### **Replit Development**
-- **Cloud Development**: Browser-based coding environment
-- **Collaboration**: Real-time development and sharing
-- **Rapid Prototyping**: Quick project iteration and testing
-- **Educational Projects**: Learning and demonstration code
+#### **☁️ Cloud Development**
+- **Replit**: Browser-based collaborative coding environment
+- **Real-time Collaboration**: Shared development workspaces
+- **Rapid Prototyping**: Quick iteration and testing capabilities
+- **Educational Focus**: Learning and demonstration projects
 
-#### **Comet ML Integration**
-- **Machine Learning**: Experiment tracking and model management
-- **Data Science**: Collaborative ML project development
-- **Model Deployment**: Production-ready ML solutions
+#### **🔬 Machine Learning Platform**
+- **Comet ML**: Experiment tracking and model management
+- **ML Collaboration**: Team-based machine learning development
+- **Model Deployment**: Production-ready ML solution deployment
 - **Research Projects**: Academic and commercial ML applications
 
-## Project Categories
+## Project Portfolio
 
-### **Active Development Projects**
-- **High Activity**: Regular commits and updates
-- **Well Documented**: Comprehensive README files
-- **Production Ready**: Deployed and maintained applications
+### **📈 Active Development (High Priority)**
+- **Regular Updates**: Consistent commits and feature development
+- **Production Ready**: Deployed applications with active maintenance
+- **Well Documented**: Comprehensive README files and documentation
 - **Community Engagement**: Issues, pull requests, and contributions
 
-### **Maintained Projects**
-- **Stable Codebase**: Mature, reliable implementations
-- **Periodic Updates**: Security patches and bug fixes
+### **🔧 Maintained Projects (Stable)**
+- **Mature Codebase**: Reliable, battle-tested implementations
+- **Security Focus**: Regular updates for patches and improvements
+- **Long-term Support**: Ongoing maintenance and bug fixes
 - **Documentation**: Clear usage instructions and examples
-- **Long-term Support**: Ongoing maintenance and improvements
 
-### **Experimental Projects**
-- **Proof of Concepts**: Innovative technology exploration
-- **Learning Projects**: Skill development and experimentation
-- **Research**: Cutting-edge technology implementation
+### **🧪 Experimental Projects (Innovation)**
+- **Proof of Concepts**: Cutting-edge technology exploration
+- **Learning Focus**: Skill development and experimentation
+- **Research Projects**: Academic and commercial ML applications
 - **Prototypes**: Early-stage application development
 
-### **Archived Projects**
-- **Completed Work**: Finished projects and deliverables
-- **Legacy Code**: Historical implementations
-- **Learning Artifacts**: Educational and demonstration projects
-- **Deprecated Solutions**: Superseded by newer implementations
+### **📚 Archived Projects (Completed)**
+- **Finished Work**: Completed projects and deliverables
+- **Legacy Solutions**: Historical implementations
+- **Educational Artifacts**: Learning and demonstration projects
+- **Deprecated Code**: Superseded by newer implementations
 
-## Portfolio Analysis Results
+## Analysis Results
 
-### **Generated Artifacts**
+### **📊 Generated Reports**
 
-#### **Repository Metadata**
+#### **Repository Analysis**
 - **`repos_summary.csv`**: Complete metadata for all 32 repositories
-- **Repository Information**: Names, descriptions, languages, stars, forks
-- **Activity Metrics**: Commit frequency, contributor information
-- **Technology Detection**: Automated stack identification
+- **Activity Metrics**: Commit frequency, contributor information, engagement
+- **Technology Detection**: Automated stack identification and classification
+- **Quality Assessment**: Code quality and maintainability metrics
 
-#### **Technology Analysis**
-- **`signals_summary.csv`**: Stack detection and technical debt analysis
-- **Technology Markers**: Framework and library identification
-- **Code Quality**: Technical debt assessment and recommendations
-- **Dependency Analysis**: Package and library usage patterns
+#### **Technology Stack Analysis**
+- **`signals_summary.csv`**: Framework and library usage patterns
+- **Dependency Analysis**: Package usage and version tracking
+- **Code Quality Metrics**: Technical debt assessment and recommendations
+- **Modern Tool Adoption**: Latest technology stack adoption rates
 
-#### **Development Environment Tracking**
-- **`platform_projects.csv`**: Cursor/Replit/Comet-linked repositories
-- **Environment Usage**: Development tool integration analysis
-- **Workflow Patterns**: Coding environment preferences
-- **Productivity Metrics**: Development efficiency measurements
+#### **Development Environment Insights**
+- **`platform_projects.csv`**: Cursor/Replit/Comet integration analysis
+- **Workflow Patterns**: Development environment preferences and usage
+- **Productivity Metrics**: Development efficiency and tool effectiveness
+- **AI Integration**: Modern AI-assisted development adoption
 
-#### **Activity Classification**
-- **`active_projects.csv`**: Currently maintained repositories
-- **`stale_projects.csv`**: Inactive or abandoned projects
+#### **Project Lifecycle Management**
+- **`active_projects.csv`**: Currently maintained and active repositories
+- **`stale_projects.csv`**: Inactive projects requiring attention
 - **Activity Thresholds**: Commit frequency and engagement metrics
-- **Maintenance Status**: Project lifecycle and support levels
+- **Maintenance Status**: Project lifecycle and support level classification
 
-#### **Documentation Analysis**
-- **`missing_readme.csv`**: Repositories requiring documentation
-- **README Quality**: Documentation completeness assessment
-- **Code Comments**: Inline documentation analysis
-- **User Guides**: Usage instructions and examples
+#### **Documentation Quality**
+- **`missing_readme.csv`**: Repositories requiring documentation improvements
+- **README Assessment**: Documentation completeness and quality analysis
+- **Code Documentation**: Inline comments and code documentation quality
+- **User Experience**: Usage instructions and developer onboarding
 
-#### **Timeline Analysis**
-- **`timeline_coarse.csv`**: High-level project activity over time
-- **`timeline_monthly.csv`**: Detailed monthly development patterns
-- **Activity Trends**: Development velocity and focus areas
-- **Project Lifecycle**: Creation, development, and maintenance phases
+#### **Timeline & Trends**
+- **`timeline_coarse.csv`**: High-level development activity patterns
+- **`timeline_monthly.csv`**: Detailed monthly development velocity
+- **Technology Evolution**: Stack adoption and migration patterns
+- **Development Focus**: Current and emerging project priorities
 
-#### **Executive Summary**
-- **`portfolio_report.md`**: Comprehensive analysis and recommendations
-- **Strategic Insights**: Portfolio optimization suggestions
-- **Technology Trends**: Emerging technology adoption patterns
-- **Development Focus**: Current and future project priorities
+#### **Strategic Recommendations**
+- **`portfolio_report.md`**: Executive summary with actionable insights
+- **Optimization Strategies**: Portfolio improvement recommendations
+- **Technology Roadmap**: Future technology adoption planning
+- **Professional Development**: Skill enhancement and growth areas
 
 ## Strategic Recommendations
 
