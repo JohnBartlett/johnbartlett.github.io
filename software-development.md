@@ -50,7 +50,7 @@ This section provides a complete overview of John Bartlett's software developmen
 
 ## Development Sections
 
-### **[Development Portfolio](/development-portfolio/)**
+### **[Project Portfolio](/portfolio/)**
 Comprehensive analysis of GitHub projects, repository statistics, and strategic recommendations for portfolio optimization.
 
 **Key Features:**
@@ -151,138 +151,29 @@ Modern development workflows, AI-enhanced coding, and collaborative development 
 - **Educational Artifacts**: Learning and demonstration projects
 - **Deprecated Code**: Superseded by newer implementations
 
-## Analysis Results
+## Development Focus Areas
 
-### **📊 Generated Reports**
-
-#### **Repository Analysis**
-- **`repos_summary.csv`**: Complete metadata for all 32 repositories
-- **Activity Metrics**: Commit frequency, contributor information, engagement
-- **Technology Detection**: Automated stack identification and classification
-- **Quality Assessment**: Code quality and maintainability metrics
-
-#### **Technology Stack Analysis**
-- **`signals_summary.csv`**: Framework and library usage patterns
-- **Dependency Analysis**: Package usage and version tracking
-- **Code Quality Metrics**: Technical debt assessment and recommendations
-- **Modern Tool Adoption**: Latest technology stack adoption rates
-
-#### **Development Environment Insights**
-- **`platform_projects.csv`**: Cursor/Replit/Comet integration analysis
-- **Workflow Patterns**: Development environment preferences and usage
-- **Productivity Metrics**: Development efficiency and tool effectiveness
-- **AI Integration**: Modern AI-assisted development adoption
-
-#### **Project Lifecycle Management**
-- **`active_projects.csv`**: Currently maintained and active repositories
-- **`stale_projects.csv`**: Inactive projects requiring attention
-- **Activity Thresholds**: Commit frequency and engagement metrics
-- **Maintenance Status**: Project lifecycle and support level classification
-
-#### **Documentation Quality**
-- **`missing_readme.csv`**: Repositories requiring documentation improvements
-- **README Assessment**: Documentation completeness and quality analysis
-- **Code Documentation**: Inline comments and code documentation quality
-- **User Experience**: Usage instructions and developer onboarding
-
-#### **Timeline & Trends**
-- **`timeline_coarse.csv`**: High-level development activity patterns
-- **`timeline_monthly.csv`**: Detailed monthly development velocity
-- **Technology Evolution**: Stack adoption and migration patterns
-- **Development Focus**: Current and emerging project priorities
-
-#### **Strategic Recommendations**
-- **`portfolio_report.md`**: Executive summary with actionable insights
-- **Optimization Strategies**: Portfolio improvement recommendations
-- **Technology Roadmap**: Future technology adoption planning
-- **Professional Development**: Skill enhancement and growth areas
-
-## Strategic Recommendations
-
-### **Portfolio Optimization**
-
-#### **Showcase Active Projects**
-- **Highlight Well-Documented Projects**: Feature repositories with comprehensive documentation
-- **Demonstrate Technical Skills**: Showcase diverse technology stack implementations
-- **Professional Presentation**: Clean, organized repository structure
-- **Clear Value Proposition**: Obvious benefits and use cases for each project
-
-#### **Revive Meaningful Projects**
-- **Identify High-Potential Projects**: Assess projects with strategic value
-- **Update Documentation**: Improve README files and code comments
-- **Modernize Technology Stack**: Update dependencies and frameworks
-- **Implement Best Practices**: Code quality improvements and testing
-
-#### **Archive Low-Value Projects**
-- **Remove Empty Repositories**: Clean up unused or placeholder projects
-- **Consolidate Duplicates**: Merge similar or redundant projects
-- **Archive Completed Work**: Move finished projects to archived status
-- **Focus on Quality**: Maintain fewer, higher-quality repositories
-
-### **Development Strategy**
-
-#### **Technology Focus Areas**
-- **AI/ML Integration**: Leverage modern AI tools and frameworks
+### **Current Development Priorities**
+- **AI Integration**: Modern AI tools and frameworks across projects
 - **Cloud-Native Development**: Containerization and microservices
 - **Full-Stack Expertise**: End-to-end application development
 - **Mobile Development**: iOS and cross-platform solutions
 
-#### **Professional Development**
-- **Continuous Learning**: Stay current with emerging technologies
-- **Open Source Contribution**: Active participation in community projects
-- **Technical Writing**: Comprehensive documentation and tutorials
-- **Mentorship**: Sharing knowledge and best practices
+## Professional Development
 
-## Development Tools & Workflows
+### **Continuous Learning**
 
-### **Analysis Methodology**
+- **Stay Current**: Emerging technologies and frameworks
+- **Open Source**: Active community participation
+- **Technical Writing**: Documentation and tutorials
+- **Mentorship**: Knowledge sharing and best practices
 
-#### **Data Collection**
-- **GitHub CLI**: Automated repository metadata extraction
-- **Python Scripts**: Custom analysis and enrichment tools
-- **PowerShell Automation**: Windows-based data processing
-- **API Integration**: GitHub API for comprehensive data access
-
-#### **Analysis Tools**
-- **`enrich.py`**: Repository metadata enrichment and processing
-- **`signals.py`**: Technology stack detection and analysis
-- **CSV Processing**: Structured data analysis and reporting
-- **Report Generation**: Automated documentation creation
-
-#### **Code Generation**
-- **ChatGPT Integration**: AI-assisted script development
-- **Prompt Engineering**: Effective AI tool utilization
-- **Automated Workflows**: Streamlined analysis processes
-- **Quality Assurance**: Code review and testing procedures
-
-### **Integration Environments**
-
-#### **Development Platforms**
-- **Cursor**: AI-assisted coding and development
-- **Replit**: Cloud-based development environment
-- **Comet ML**: Machine learning experiment tracking
-- **GitHub**: Version control and collaboration
-
-#### **Workflow Optimization**
-- **Automated Analysis**: Streamlined portfolio assessment
-- **Continuous Monitoring**: Regular project health checks
-- **Documentation Generation**: Automated report creation
-- **Quality Metrics**: Code quality and maintainability tracking
-
-## Future Development Priorities
-
-### **Immediate Actions**
-1. **Update Documentation**: Improve README files for key projects
-2. **Code Quality**: Implement testing and code review processes
-3. **Technology Updates**: Modernize dependencies and frameworks
-4. **Portfolio Curation**: Focus on high-impact, well-documented projects
-
-### **Long-term Strategy**
-1. **AI Integration**: Leverage modern AI tools for development
-2. **Cloud-Native Solutions**: Containerization and microservices
-3. **Open Source Leadership**: Active community participation
-4. **Technical Excellence**: Maintain high standards and best practices
+### **Development Excellence**
+- **Code Quality**: Testing, review, and documentation
+- **Modern Practices**: AI-assisted development workflows
+- **Cloud-Native**: Containerization and microservices
+- **Full-Stack**: End-to-end application development
 
 ---
 
-*This analysis provides a comprehensive view of the development portfolio, offering strategic insights for continued growth and professional development in software engineering and AI implementation.*
+*For detailed portfolio analysis, project statistics, and strategic recommendations, visit the [Project Portfolio](/portfolio/) page.*

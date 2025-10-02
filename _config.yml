@@ -29,6 +29,8 @@ navigation:
     url: "#results"
   - title: "Industries"
     url: "#industries"
+  - title: "Portfolio"
+    url: "/portfolio/"
   - title: "About"
     url: "#about"
   - title: "Contact"
@@ -37,5 +39,5 @@ navigation:
     url: "/software-development/"
 
 # Site version
-version: 3.2.33
+version: 3.2.34
 
